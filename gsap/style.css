@@ -1,0 +1,17 @@
+.box img{
+    position: absolute;
+    top: 50%;
+    right:5%;
+    height: 100px;
+}
+
+h3{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+h2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}

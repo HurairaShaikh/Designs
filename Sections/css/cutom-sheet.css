@@ -1,0 +1,231 @@
+    @font-face {
+        font-family: "Poppins";
+        src: url(../public/fonts/Poppins-SemiBold.woff2)format(woff2),
+            url(../public/fonts/Poppins-SemiBold.woff) format(woff);
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url(../public/fonts/Poppins-Regular.woff2)format(woff2),
+            url(../public/fonts/Poppins-Regular.woff) format(woff);
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    :root {
+        --section-heading-family: "Poppins";
+        --section-body-family: "Poppins";
+
+        --section-litte-dark-color: #011311;
+        --section-primary-color: #42B0A8;
+        --section-light-color: #ffffff;
+        --section-dark-color: #000000;
+
+        --section-fontsize-seventy: 70px;
+        --section-font-sixe-fourtyeight: 48px;
+        --section-fontsize-twentyfour: 24px;
+        --section-fontsize-eightteen: 18px;
+        --section-fontsize-sixteen: 16px;
+        --section-font-sm: 10px;
+        --section-font-xsm: 9px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--section-heading-family);
+        font-weight: 600;
+    }
+
+    p {
+        font-family: var(--section-body-family);
+        font-size: var(--section-fontsize-eightteen);
+    }
+
+    body {}
+
+    .our-values .inner-content {
+        /* display: flex; */
+        /* align-items: flex-start;
+        justify-content: space-evenly; */
+        /* padding: 50px; */
+    }
+
+    .our-values {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .inner-content h1 {
+        font-size: var(--section-fontsize-seventy);
+        background-image: linear-gradient(to right, var(--section-litte-dark-color) 10%, var(--section-primary-color) 70%);
+        color: transparent;
+        background-clip: text;
+    }
+
+    .inner-content p {
+        color: var(--section-litte-dark-color);
+    }
+
+    .round-values {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        margin-top: -100px;
+    }
+
+    .round-values img {
+        position: relative;
+        width: 903px;
+        /* height: 700px; */
+    }
+
+    .para h4 {
+        font-size: var(--section-fontsize-twentyfour);
+        color: var(--section-primary-color);
+    }
+
+    .para1 {
+        position: absolute;
+        transform: translate(-107%, -191%);
+        text-align: right;
+    }
+
+    .para3 {
+        position: absolute;
+        transform: translate(-112%, 2%);
+        text-align: right;
+    }
+
+    .para5 {
+        position: absolute;
+        transform: translate(-99%, 219%);
+        text-align: right;
+    }
+
+    .para2 {
+        position: absolute;
+        transform: translate(88%, -194%);
+    }
+
+    .para4 {
+        position: absolute;
+        transform: translate(115%, 22%);
+    }
+
+    .para6 {
+        position: absolute;
+        transform: translate(111%, 220%);
+    }
+
+    .image-of-before-after-bg {
+        /* position: relative; */
+    }
+
+    .first-image::after {
+        content: url('../public/images/Group\ 1577708251.png');
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+    }
+
+    .first-image::before {
+        content: url('../public/images/Group\ 1577708252.png');
+        position: absolute;
+        top: 0;
+
+    }
+
+
+
+
+
+
+    @media screen and (max-width:768px) {
+
+        html,
+        body {
+            width: 100%;
+            /* overflow-x: hidden; */
+        }
+
+        /* .inner-content{
+            width: 100%;
+        } */
+        .inner-content-first,
+        .inner-content-second {
+            width: 100%;
+        }
+
+        .inner-content-first h1 {
+            font-size: var(--section-font-sixe-fourtyeight);
+        }
+
+        .inner-content-second p {
+            font-size: 14px;
+        }
+
+        .first-image::after,
+        .first-image::before {
+            display: none;
+        }
+
+        .round-values {
+            margin-top: 0;
+            width: auto;
+        }
+
+        .round-values img {
+            width: 500px;
+            margin-top: 0;
+        }
+
+        .para h4 {
+            font-size: 10px;
+            color: var(--section-primary-color);
+        }
+
+        .para p {
+            font-size: 9px;
+            /* overflow-wrap: break-word;  */
+            word-break: break-all;
+        }
+
+
+        .para1 {
+            transform: translate(-88%, -237%);
+            text-align: right;
+        }
+
+        .para3 {
+            transform: translate(-106%, 25%);
+            text-align: right;
+        }
+
+        .para5 {
+            transform: translate(-64%, 270%);
+            text-align: right;
+        }
+
+        .para2 {
+            transform: translate(74%, -235%);
+        }
+
+        .para4 {
+            transform: translate(114%, 22%);
+        }
+
+        .para6 {
+            transform: translate(81%, 270%);
+        }
+
+
+    }
