@@ -1,48 +1,54 @@
 @font-face {
     font-family: "Bebas";
-    src: url(../BebasNeueBold.woff2)format(woff2),
-    url(../BebasNeueBold.woff2) format(woff);
+    src: url(../public/fonts/BebasNeueBold.woff2)format(woff2),
+        url(../public/fonts/BebasNeueBold.woff) format(woff);
     font-display: swap;
     font-style: normal;
     font-weight: 700;
 }
 
 
-:root{
-    --paw-heading-family:"Bebas";
-    --paw-primary-family:sans-serif;
-    --paw-primary-color:#f47f7a;
-    --paw-litte-dark-color:#f66661;
-    --paw-light-color:#ffffff;
-    --paw-dark-color:#000000;
+:root {
+    --paw-heading-family: "Bebas";
+    --paw-primary-family: sans-serif;
+    --paw-primary-color: #f47f7a;
+    --paw-litte-dark-color: #f66661;
+    --paw-light-color: #ffffff;
+    --paw-dark-color: #000000;
 
 
-    --paw-font-ninty:100px;
-    --paw-font-swvwnty-five:75px;
-    --paw-font-md:16px;
-    --paw-font-mds:15px;
-    --paw-font-sm:14px;
+    --paw-font-ninty: 100px;
+    --paw-font-swvwnty-five: 75px;
+    --paw-font-md: 16px;
+    --paw-font-mds: 15px;
+    --paw-font-sm: 14px;
 }
 
-body{
+body {
 
     font-family: var(--paw-primary-family);
 
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--paw-heading-family);
     font-weight: bold;
 }
-p{
+
+p {
     font-size: var(--paw-font-md);
     color: var(--paw-light-color);
     font-family: var(--paw-primary-family);
     font-weight: 300;
 }
 
-.hero-bg-image{
-    background-image: url(../Pawdacity-Homepage-hero-01.webp);
+.hero-bg-image {
+    background-image: url(../public/images/Pawdacity-Homepage-hero-01.webp);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,26 +58,28 @@ p{
     justify-content: space-between;
 }
 
-.left-side h1{
+.left-side h1 {
     color: var(--paw-light-color);
     font-size: var(--paw-font-ninty);
     letter-spacing: 5%;
     line-height: 90%;
 }
 
-.left-side span{
+.left-side span {
     color: var(--paw-primary-color);
 }
 
-#first-para{
+#first-para {
     font-weight: bold;
     text-transform: uppercase;
 }
-#last-para{
+
+#last-para {
     font-weight: 400;
     margin-bottom: 40px;
 }
-.left-side a{
+
+.left-side a {
     text-decoration: none;
     padding: 13px 20px;
     background-color: var(--paw-litte-dark-color);
@@ -81,34 +89,39 @@ p{
 }
 
 
-@media screen and (max-width:768px){
-    html,body{
+@media screen and (max-width:768px) {
+
+    html,
+    body {
         width: 100%;
         overflow: hidden;
     }
 
-    .hero-bg-image{
+    .hero-bg-image {
         background-image: none;
-        background-image: url(../mobile-banner-podacity.webp);
+        background-image: url(../public/images/mobile-banner-podacity.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
         padding: 40px 0 70px 0;
         /* padding: 0; */
     }
-    
+
     .left-side {
         width: 100%;
     }
-    .left-side h1{
+
+    .left-side h1 {
         font-size: var(--paw-font-swvwnty-five);
 
     }
-    .left-side #first-para{
+
+    .left-side #first-para {
         text-transform: uppercase;
         font-size: var(--paw-font-mds);
     }
-    .left-side #last-para{
+
+    .left-side #last-para {
         font-size: var(--paw-font-mds);
         font-weight: 400;
     }
