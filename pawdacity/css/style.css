@@ -241,6 +241,9 @@ p {
         border: none;
         padding: 0;
     }
+    .nav-item a:hover{
+        color: var(--paw-primary-color);
+    }
     .nav-bar{
         padding: 10px 0;
     }
