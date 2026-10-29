@@ -1,0 +1,36 @@
+.head-ings{
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(171, 102, 53);
+    margin-top: 200px;
+    color:white;
+
+}
+#get-data{
+    color: white;
+    background-color: green ;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+}
+#reset{
+    color: white;
+    background-color: red ;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+input[type="text"]{
+    padding: 10px 20px;
+
+}
+.remove{
+    display: none;
+}
