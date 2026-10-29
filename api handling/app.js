@@ -13,12 +13,12 @@ async function  getData() {
        
 
             if(findName.value.toString().toLowerCase() === data["users"][i]["firstName"].toLowerCase()){
-                console.log("FullName:"+data["users"][i]["firstName"]+" "+data["users"][i]["lastName"]);
-                console.log("age:"+data["users"][i]["age"]);
-                console.log("gender: "+data["users"][i]["gender"]);
-                console.log("email:"+data["users"][i]["email"]);
-                console.log("Phone: "+data["users"][i]["phone"]);
-                console.log("Phone: "+data["users"][i]["address"]["country"]);
+                // console.log("FullName:"+data["users"][i]["firstName"]+" "+data["users"][i]["lastName"]);
+                // console.log("age:"+data["users"][i]["age"]);
+                // console.log("gender: "+data["users"][i]["gender"]);
+                // console.log("email:"+data["users"][i]["email"]);
+                // console.log("Phone: "+data["users"][i]["phone"]);
+                // console.log("Phone: "+data["users"][i]["address"]["country"]);
                 let details= {
                     "fullname":data["users"][i]["firstName"]+" "+data["users"][i]["lastName"],
                     "age":data["users"][i]["age"],
