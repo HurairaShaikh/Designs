@@ -43,6 +43,23 @@ body{
     color: #fff;
     padding: 0 48px;
     border-right: 1px solid #4e459e;
+    font-size: 18px;
+}
+.fourth-footer-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 26px;
+    background-color: #1A1070;
+    padding: 25px;
+    /* gap: 40px; */
+}
+.fourth-footer-col a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 48px;
+    /* border-right: 1px solid #4e459e; */
+    font-size: 18px;
 }
 /* .third-footer-line{
     height: 20px;
