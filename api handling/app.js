@@ -24,11 +24,12 @@ async function  getData() {
                     "age":data["users"][i]["age"],
                     "gender":data["users"][i]["gender"],
                     "email":data["users"][i]["email"],
-                    "Phone":data["users"][i]["phone"]
+                    "Phone":data["users"][i]["phone"],
+                    "Country":data["users"][i]["address"]["country"]
                 }
                 
                 
-                    message.innerText = "FullName: " + details.fullname +'\n'+"Age: "+ details.age+'\n'+"Gender: "+details.gender+'\n'+"Email: "+details.email+'\n'+"Phone: "+details.Phone+"\n" +"Country: "+data["users"][i]["address"]["country"];
+                    message.innerText = "FullName: " + details.fullname +'\n'+"Age: "+ details.age+'\n'+"Gender: "+details.gender+'\n'+"Email: "+details.email+'\n'+"Phone: "+details.Phone+"\n" +"Country: "+details.Country;
                 
                 message.classList.remove("remove");
                 break;
