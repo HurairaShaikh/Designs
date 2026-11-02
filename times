@@ -1,0 +1,50 @@
+ "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "MONDAY"
+      ],
+      "opens": "06:00",
+      "closes": "07:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "TUESDAY"
+      ],
+      "opens": "06:00",
+      "closes": "07:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "WEDNESDAY"
+      ],
+      "opens": "06:00",
+      "closes": "07:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "THURSDAY"
+      ],
+      "opens": "06:00",
+      "closes": "07:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "FRIDAY"
+      ],
+      "opens": "06:00",
+      "closes": "07:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "SATURDAY"
+      ],
+      "opens": "08:00",
+      "closes": "05:00"
+    }
+  ],
