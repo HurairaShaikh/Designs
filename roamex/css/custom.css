@@ -291,11 +291,12 @@ header,
     border-radius: 38px;
 }
 
-.countries{
+.countries {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
+
 .country {
     display: flex;
     align-items: center;
@@ -465,9 +466,9 @@ header,
     }
 
     .payments {
-        height: 450px;
-        width: 380px;
-        top: 80%;
+        height: 200px;
+        width: 360px;
+        top: 72%;
         background-size: contain;
     }
 
