@@ -49,7 +49,7 @@
 }
 
 body {
-    background-color: var(--rox-little-light-blue);
+    /* background-color: var(--rox-little-light-blue); */
     font-family: var(--rox-primary-family);
 }
 
@@ -63,10 +63,16 @@ h6 {
     font-weight: 400;
 }
 
+header,
+.esim {
+    background-color: var(--rox-little-light-blue);
+}
+
 .head-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .logos img {
@@ -138,7 +144,7 @@ h6 {
     align-items: center;
     justify-content: center;
     gap: 20px;
-
+    padding: 20px 0;
 }
 
 .hero-section span {
@@ -186,7 +192,6 @@ h6 {
     justify-content: center;
 }
 
-.payments {}
 
 .payments {
     background-image: url(../public/images/Ellipse\ 3.png);
@@ -209,7 +214,58 @@ h6 {
     width: 60px;
 }
 
-@media screen and(min-width:1041px) {}
+.policies {
+    display: flex;
+    margin-top: 230px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    border-radius: 20px;
+    padding: 20px 20px;
+    background-color: var(--rox-dark-blue);
+    color: var(--rox-light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.boxs {
+    border-radius: 20px;
+    padding: 20px 10px;
+    background-color: var(--rox-light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    border: 1px solid var(--rox-light-color);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* activate Section */
+.activate-left-side img {
+    width: 417px;
+}
+
+.activate-right-side ul {
+    padding-left: 0rem;
+}
+
+.activate-right-side li {
+    list-style: none;
+}
+
+.activate-right-side img {
+    width: 23px;
+}
+
+@media screen and(min-width:1041px) {
+
+
+}
 
 @media screen and (max-width:1040px) {
 
@@ -232,8 +288,15 @@ h6 {
     }
 
     .payments {
-        display: none;
+        height: 400px;
+        width: 960px;
+        top: 75%;
+        background-size: cover;
     }
+
+    /* .payments {
+        display: none;
+    } */
 }
 
 @media screen and (max-width:768px) {
@@ -253,7 +316,7 @@ h6 {
     }
 
     .hero-section {
-        padding-top: 40px;
+        padding-top: 70px;
     }
 
     .hero-section h1 {
@@ -278,18 +341,19 @@ h6 {
         width: 400px;
     }
 
-    /* .payments {
-        height: 300px;
-        width: 410px;
-        top: 73%;
-        background-size: contain;
-    } */
     .payments {
-        display: none;
+        height: 400px;
+        width: 410px;
+        top: 75%;
+        background-size: contain;
     }
 
     .payment-bank-slider img {
-        width: 60px;
+        width: 40px;
+    }
+
+    .policies {
+        margin-top: 0;
     }
 }
 
@@ -314,7 +378,7 @@ h6 {
     }
 
     .hero-section {
-        padding-top: 40px;
+        padding-top: 60px;
     }
 
     .hero-section h1 {
@@ -340,13 +404,17 @@ h6 {
         width: 300px;
     }
 
-    /* .payments {
-        height: 300px;
-        width: min-content;
-        top: 81%;
-        background-size: contain;
-    } */
     .payments {
-        display: none;
+        height: 450px;
+        width: 380px;
+        top: 80%;
+        background-size: contain;
+    }
+    .payment-bank-slider img{
+        width: 40px;
+    }
+
+    .policies {
+        margin-top: 0;
     }
 }
