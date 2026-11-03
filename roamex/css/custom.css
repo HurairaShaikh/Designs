@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "DM sans";
+    src: url(../public/fonts/DMSans-Medium.woff2) format(woff2),
+        url(../public/fonts/DMSans-Medium.woff) format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM sans";
+    src: url(../public/fonts/DMSans_18pt-Bold.woff2) format(woff2),
+        url(../public/fonts/DMSans_18pt-Bold.woff2) format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM sans";
+    src: url(../public/fonts/DMSans_18pt-ExtraBold.woff2) format(woff2),
+        url(../public/fonts/DMSans_18pt-ExtraBold.woff2) format(woff);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cal sans";
+    src: url(../public/fonts/CalSans-Regular.woff2) format(woff2),
+        url(../public/fonts/CalSans-Regular.woff2) format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --rox-text-color: #3C3939;
+    --rox-light-color: #ffffff;
+    --rox-primary-color: #4487F3;
+    --rox-little-light-blue: #63A4FF;
+    --rox-dark-blue: #211C84;
+    --rox-primary-family: "DM sans";
+    --rox-heading-family: "Cal sans";
+    --rox-fs-eighty-seven: 87px;
+    /* --rox-fs-eighty-seven:px; */
+    --rox-fs-twenty: 20px;
+    --rox-fs-eighteen: 18px;
+}
+
+body {
+    background-color: var(--rox-little-light-blue);
+    font-family: var(--rox-primary-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--rox-heading-family);
+    font-weight: 400;
+}
+
+.head-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos img {
+    height: 67px;
+}
+
+.nav-bar {
+    padding: 20px;
+    background-color: var(--rox-light-color);
+    border-radius: 38px;
+    color: var(--rox-text-color);
+}
+
+.nav-bar a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--rox-text-color);
+}
+
+.nav-bar a:hover,
+.nav-bar select:hover {
+    color: var(--rox-little-light-blue);
+}
+
+.nav-bar select {
+    border: none;
+    margin-left: 20px;
+}
+
+.head-right-side {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.head-right-side a {
+    text-decoration: none;
+    background-color: var(--rox-dark-blue);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.head-right-side a img {
+    width: 22px;
+}
+
+.language a img {
+    width: 35px;
+}
+
+.language a {
+    padding: 12px 20px 12px 5px;
+    border-radius: 38px;
+    text-decoration: none;
+    background-color: var(--rox-light-color);
+    color: var(--rox-text-color);
+    font-weight: 600;
+}
+
+#mob-navbar {
+    display: none;
+}
+
+/* Body */
+/* First-section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.hero-section span {
+    padding: 10px 30px;
+    border-radius: 38px;
+    background-color: var(--rox-light-color);
+}
+
+.hero-section h1 {
+    font-size: var(--rox-fs-eighty-seven);
+    color: var(--rox-light-color);
+    letter-spacing: 0%;
+    line-height: 91.5px;
+    text-align: center;
+}
+
+.hero-section p {
+    color: var(--rox-light-color);
+    font-size: var(--rox-fs-twenty);
+}
+
+.hero-section .visit-destination a {
+    text-decoration: none;
+    padding: 20px 10px 20px 20px;
+    background-color: var(--rox-dark-blue);
+    color: var(--rox-light-color);
+    border-radius: 38px;
+}
+
+.visit-destination img {
+    background-color: var(--rox-light-color);
+    padding: 12px;
+    border-radius: 100%;
+}
+
+.mobile-screen img {
+    width: 916px;
+}
+
+.mobile-screen {
+    /* align-self: center; */
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and(min-width:1041px) {}
+
+@media screen and (max-width:1040px) {
+
+    html,
+    body {
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+
+    .head-section {
+        display: none;
+    }
+
+    #mob-navbar {
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .head-section {
+        display: none;
+    }
+
+    #mob-navbar {
+        display: block;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    .hero-section span {
+        font-size: 14px;
+    }
+
+    .visit-destination a {
+        font-size: 14px;
+
+    }
+
+    .mobile-screen img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .head-section {
+        display: none;
+    }
+
+    #mob-navbar {
+        display: block;
+    }
+
+    #mob-navbar .navbar-brand img {
+        width: 150px;
+    }
+
+    .hero-section h1 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .hero-section p {
+        font-size: 12px;
+    }
+
+    .hero-section span {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .hero-section .visit-destination a {
+        font-size: 12px;
+        padding: 13px 8px 13px 13px;
+    }
+
+    .mobile-screen img {
+        width: 300px;
+    }
+}
