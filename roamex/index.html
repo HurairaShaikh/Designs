@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roamex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/boot.css">
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -89,7 +90,7 @@
 
     <!-- Body -->
 
-    <section class="    ">
+    <section class="">
         <div class="container hero-section mt-5">
             <span>
                 International eSIM card
@@ -103,17 +104,34 @@
             <div class="visit-destination">
                 <a href="#">View All Desitinations <img src="./public/images/Line 24.png" alt=""></a>
             </div>
+            <div class="mobile-screen mt-5 position-relative">
+                <img src="./public/images/section.png" alt="">
+            </div>
         </div>
+        <div class="payments">
+            <!-- <img src="./public/images/Ellipse 3.png" alt=""> -->
+        </div>
+         <div class="swiper mySwiper ms-2">
+                <div class="swiper-wrapper payment-bank-slider">
+                    <div class="swiper-slide"><img src="./public/images/visa.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/master.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/g pay.png" alt="bank logo"></div>
+                    <div class="swiper-slide" id="paypal"><img src="./public/images/paypal.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/apple pay.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/deal.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/american express.png" alt="bank logo"></div>
+                    <div class="swiper-slide"><img src="./public/images/bancontact.png" alt="bank logo"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
     </section>
 
     <section>
-        <div class="container mt-5">
-            <div class="mobile-screen">
-                <img src="./public/images/section.png" alt="">
-            </div>
+        <div class="container">
            
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/boot.js"></script>
     <script src="./js/custom.js"></script>
 </body>

@@ -186,6 +186,29 @@ h6 {
     justify-content: center;
 }
 
+.payments {}
+
+.payments {
+    background-image: url(../public/images/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 600px;
+    width: 1520px;
+    top: 115%;
+}
+
+/* Payment links slider */
+
+.payment-bank-slider {
+    display: flex;
+    align-items: center;
+}
+
+.payment-bank-slider img {
+    width: 60px;
+}
+
 @media screen and(min-width:1041px) {}
 
 @media screen and (max-width:1040px) {
@@ -203,6 +226,14 @@ h6 {
     #mob-navbar {
         display: block;
     }
+
+    .hero-section {
+        padding-top: 40px;
+    }
+
+    .payments {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -219,6 +250,10 @@ h6 {
 
     #mob-navbar {
         display: block;
+    }
+
+    .hero-section {
+        padding-top: 40px;
     }
 
     .hero-section h1 {
@@ -242,6 +277,20 @@ h6 {
     .mobile-screen img {
         width: 400px;
     }
+
+    /* .payments {
+        height: 300px;
+        width: 410px;
+        top: 73%;
+        background-size: contain;
+    } */
+    .payments {
+        display: none;
+    }
+
+    .payment-bank-slider img {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -262,6 +311,10 @@ h6 {
 
     #mob-navbar .navbar-brand img {
         width: 150px;
+    }
+
+    .hero-section {
+        padding-top: 40px;
     }
 
     .hero-section h1 {
@@ -285,5 +338,15 @@ h6 {
 
     .mobile-screen img {
         width: 300px;
+    }
+
+    /* .payments {
+        height: 300px;
+        width: min-content;
+        top: 81%;
+        background-size: contain;
+    } */
+    .payments {
+        display: none;
     }
 }
