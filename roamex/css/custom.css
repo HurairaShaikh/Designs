@@ -40,10 +40,12 @@
     --rox-primary-color: #4487F3;
     --rox-little-light-blue: #63A4FF;
     --rox-dark-blue: #211C84;
+    --rox-span-color: #29249A;
+    --rox-bg-color: #F7FAFE;
     --rox-primary-family: "DM sans";
     --rox-heading-family: "Cal sans";
     --rox-fs-eighty-seven: 87px;
-    /* --rox-fs-eighty-seven:px; */
+    --rox-fs-seven-two: 72px;
     --rox-fs-twenty: 20px;
     --rox-fs-eighteen: 18px;
 }
@@ -262,10 +264,68 @@ header,
     width: 23px;
 }
 
-@media screen and(min-width:1041px) {
-
-
+/* destination section */
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.destinations span {
+    color: var(--rox-span-color);
+    border: 1px solid var(--rox-span-color);
+    padding: 10px 20px;
+    border-radius: 26px;
+}
+
+.destinations h2 {
+    font-size: var(--rox-fs-seven-two);
+}
+
+.destinations .visit-destination a {
+    text-decoration: none;
+    padding: 20px 10px 20px 20px;
+    background-color: var(--rox-dark-blue);
+    color: var(--rox-light-color);
+    border-radius: 38px;
+}
+
+.countries{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.country {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--rox-bg-color);
+    /* box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); */
+    border-radius: 26px;
+    margin: 0 0px 20px 10px;
+}
+
+.countrys {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: var(--rox-span-color);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    color: var(--rox-light-color);
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+/* .countries .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media screen and(min-width:1041px) {}
 
 @media screen and (max-width:1040px) {
 
@@ -344,7 +404,7 @@ header,
     .payments {
         height: 400px;
         width: 410px;
-        top: 75%;
+        top: 80%;
         background-size: contain;
     }
 
@@ -410,7 +470,8 @@ header,
         top: 80%;
         background-size: contain;
     }
-    .payment-bank-slider img{
+
+    .payment-bank-slider img {
         width: 40px;
     }
 
