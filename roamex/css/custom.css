@@ -39,6 +39,7 @@
     --rox-light-color: #ffffff;
     --rox-primary-color: #4487F3;
     --rox-little-light-blue: #63A4FF;
+    --rox-light-blue: #DBEBF8;
     --rox-dark-blue: #211C84;
     --rox-span-color: #29249A;
     --rox-bg-color: #F7FAFE;
@@ -344,7 +345,7 @@ header,
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 .dibb {
@@ -370,9 +371,9 @@ header,
 /* world map */
 .world {
     /* margin: 40px; */
-    padding: 0 20px;
+    padding: 130px 20px;
     border-radius: 25px;
-    background: linear-gradient(to right, var(--rox-primary-color) 10%, #DBEBF8 100%);
+    background: linear-gradient(to right, var(--rox-primary-color) 10%, var(--rox-light-blue) 100%);
 }
 
 .world-left-side {
@@ -387,12 +388,84 @@ header,
 }
 
 .world-right-side img {
-    position: relative;
+    position: absolute;
     height: 403px;
     width: 750px;
-    /* right: ; */
-    left: 5.8%;
+    transform: translate(-15%, -30%);
 }
+
+/* stay connect slider section */
+.connect-section {
+    padding: 20px 20px 90px 20px;
+    border-radius: 26px;
+    background: linear-gradient(to bottom, var(--rox-primary-color) 10%, var(--rox-light-blue) 100%);
+}
+
+.connect-section h2 {
+    font-size: var(--rox-fs-seven-two);
+    color: var(--rox-light-color);
+    text-align: center
+}
+
+.connect-sliders {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 20px 30px 20px;
+    border-radius: 26px;
+    border: 1px solid var(--rox-light-color);
+    background-color: var(--rox-light-blue);
+}
+
+.connect-sliders img {
+    width: 44px;
+}
+
+.arrow-btns {
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+    /* transform: translate(0%, -50%); */
+}
+
+.arrows-btns img {
+    width: 90px;
+    padding: 24px 23px 23px 22px;
+    background-color: transparent;
+    border-radius: 42px;
+    border: 1px solid var(--negar-primary-color);
+}
+
+.connect-section .swiper-button-next img {
+    border-radius: 50%;
+    background-color: var(--rox-light-color);
+    padding: 20px;
+    margin-left: -50px;
+}
+
+.connect-section .swiper-button-prev img {
+    border-radius: 50%;
+    background-color: var(--rox-dark-blue);
+    padding: 20px;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 5%;
+    left: -35%;
+    color: var(--rox-light-color);
+    font-weight: bold;
+}
+
+.lining {
+    width: 100px;
+}
+
+
+
+
 
 @media screen and(min-width:1041px) {}
 
@@ -427,6 +500,11 @@ header,
         display: none;
     } */
 
+    /* travel section */
+    .dibb img {
+        width: 200px;
+    }
+
     /* world-mao */
     .world {
         /* margin: 0; */
@@ -435,13 +513,12 @@ header,
 
     .world-right-side img {
         /* height: 403px; */
-        width: 350px;
-        /* right: ; */
-        left: 2%;
+        width: 400px;
+        object-fit: contain;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     html,
     body {
@@ -515,17 +592,25 @@ header,
         font-size: 50px;
     }
 
+    .dibb img {
+        width: 280px;
+    }
+
     /* world-mao */
     .world {
         margin: 0;
-        padding: 20px 0;
+        padding: 10px 0 180px 0;
+    }
+
+    .world-left-side {
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .world-right-side img {
         /* height: 403px; */
         width: 400px;
-        /* right: ; */
-        left: -8%;
+        transform: translate(-8%, -30%);
         object-fit: contain;
     }
 }
@@ -610,13 +695,18 @@ header,
     /* world-mao */
     .world {
         margin: 0;
-        padding: 20px 0;
+        padding: 10px 0 180px 0;
+    }
+
+    .world-left-side {
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .world-right-side img {
         /* height: 403px; */
-        width: 355px;
-        /* right: ; */
-        left: -10%;
+        width: 350px;
+        transform: translate(-10%, -30%);
+        object-fit: contain;
     }
 }
