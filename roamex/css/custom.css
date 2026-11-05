@@ -223,21 +223,17 @@ header,
     gap: 10px;
 }
 
-.box {
-    border-radius: 20px;
-    padding: 20px 20px;
+.boxs:hover {
     background-color: var(--rox-dark-blue);
     color: var(--rox-light-color);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 300px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
+/* boxs:hover svg path  {
+    fill: #4487F3;
+} */
 .boxs {
     border-radius: 20px;
-    padding: 20px 10px;
+    padding: 20px 20px;
     background-color: var(--rox-light-color);
     display: flex;
     flex-direction: column;
@@ -303,28 +299,100 @@ header,
     justify-content: space-evenly;
     padding: 20px;
     background-color: var(--rox-bg-color);
-    /* box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); */
     border-radius: 26px;
     margin: 0 0px 20px 10px;
 }
 
-.countrys {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
+.country:hover {
     background-color: var(--rox-span-color);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     color: var(--rox-light-color);
-    border-radius: 26px;
-    margin-bottom: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
+
+.country:hover svg {}
 
 /* .countries .row{
   display: flex;
   align-items: center;
   justify-content: center;
 } */
+
+
+/* Travel section */
+.travel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.travel-section span {
+    color: var(--rox-span-color);
+    border: 1px solid var(--rox-span-color);
+    padding: 10px 20px;
+    border-radius: 26px;
+    text-align: center;
+}
+
+.travel-section h2 {
+    font-size: var(--rox-fs-seven-two);
+    text-align: center;
+}
+
+.bara-dibba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dibb {
+    /* text-align: start; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--rox-light-color);
+    padding: 20px;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 26px;
+}
+
+.dibb img {
+    width: 300px;
+}
+
+.dibba3 {
+    padding: 30px 20px;
+}
+
+/* world map */
+.world {
+    /* margin: 40px; */
+    padding: 0 20px;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--rox-primary-color) 10%, #DBEBF8 100%);
+}
+
+.world-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--rox-light-color);
+}
+
+.world-left-side img {
+    width: 79px;
+}
+
+.world-right-side img {
+    position: relative;
+    height: 403px;
+    width: 750px;
+    /* right: ; */
+    left: 5.8%;
+}
 
 @media screen and(min-width:1041px) {}
 
@@ -358,6 +426,19 @@ header,
     /* .payments {
         display: none;
     } */
+
+    /* world-mao */
+    .world {
+        /* margin: 0; */
+        padding: 20px;
+    }
+
+    .world-right-side img {
+        /* height: 403px; */
+        width: 350px;
+        /* right: ; */
+        left: 2%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -415,6 +496,37 @@ header,
 
     .policies {
         margin-top: 0;
+    }
+
+    /*  */
+
+    .destinations h2 {
+        margin-top: 20px;
+        font-size: 50px;
+
+    }
+
+    /* travel section */
+    .travel-section {
+        text-align: start;
+    }
+
+    .travel-section h2 {
+        font-size: 50px;
+    }
+
+    /* world-mao */
+    .world {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .world-right-side img {
+        /* height: 403px; */
+        width: 400px;
+        /* right: ; */
+        left: -8%;
+        object-fit: contain;
     }
 }
 
@@ -478,5 +590,33 @@ header,
 
     .policies {
         margin-top: 0;
+    }
+
+    .destinations h2 {
+        margin-top: 20px;
+        font-size: 50px;
+
+    }
+
+    /* travel section */
+    .travel-section {
+        text-align: start;
+    }
+
+    .travel-section h2 {
+        font-size: 50px;
+    }
+
+    /* world-mao */
+    .world {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .world-right-side img {
+        /* height: 403px; */
+        width: 355px;
+        /* right: ; */
+        left: -10%;
     }
 }
