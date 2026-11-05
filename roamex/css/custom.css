@@ -463,8 +463,21 @@ header,
     border: 1px solid var(--rox-light-color);
 }
 
-.mob-slider ,.tab-slider{
+.mob-slider,
+.tab-slider {
     display: none;
+}
+
+/* Roamex-esim */
+.roamex-esim-section span {
+    color: var(--rox-span-color);
+    border: 1px solid var(--rox-span-color);
+    padding: 10px 20px;
+    border-radius: 26px;
+}
+
+.roamex-esim-section h2 {
+    font-size: var(--rox-fs-seven-two);
 }
 
 
@@ -521,10 +534,11 @@ header,
     }
 
     /* connect section */
-    .web-slider{
+    .web-slider {
         display: none;
     }
-    .tab-slider{
+
+    .tab-slider {
         display: block;
     }
 
