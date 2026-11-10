@@ -474,11 +474,81 @@ header,
     border: 1px solid var(--rox-span-color);
     padding: 10px 20px;
     border-radius: 26px;
+    text-align: center;
 }
 
 .roamex-esim-section h2 {
     font-size: var(--rox-fs-seven-two);
 }
+
+.roamex-cards {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.roamex-cards img {
+    width: 340px;
+    height: 288px;
+}
+
+.rox-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rox-bg-color);
+    width: 360px;
+    padding: 20px;
+    border-radius: 26px;
+}
+
+.rox-boxes h6,
+.rox-boxes .numbers {
+    align-self: flex-start;
+}
+
+.numbers img {
+    width: 53px;
+    height: 53px;
+}
+
+/* greener section */
+.greener-inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.greener-inner-content h2 {
+    font-size: var(--rox-fs-seven-two);
+}
+
+.greener-section-boxes {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.greener-boxes {
+    width: 300px;
+    border-right: 1px solid var(--rox-text-color);
+    text-align: center;
+    /* background-color: #211C84; */
+}
+
+.greener-section-boxes:last-child {
+    border-right: 0;
+}
+
+.greener-boxes img {
+    width: 125px;
+}
+
 
 
 
@@ -545,6 +615,9 @@ header,
     .lining {
         display: none;
     }
+
+    /* roamex esim  */
+
 }
 
 @media screen and (max-width:767px) {
@@ -648,7 +721,8 @@ header,
         font-size: 50px;
     }
 
-    .web-slider {
+    .web-slider,
+    .tab-slider {
         display: none;
     }
 
@@ -662,6 +736,16 @@ header,
 
     .lining {
         display: none;
+    }
+
+    /* roamex esim */
+    .roamex-esim-section h2 {
+        font-size: 50px;
+    }
+
+    /* greener-section */
+    .greener-inner-content h2{
+        font-size: 50px;
     }
 }
 
@@ -758,5 +842,10 @@ header,
         width: 350px;
         transform: translate(-10%, -30%);
         object-fit: contain;
+    }
+
+    .web-slider,
+    .tab-slider {
+        display: none;
     }
 }
