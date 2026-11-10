@@ -549,6 +549,11 @@ header,
     width: 125px;
 }
 
+/* FAQs Section */
+.faq-section h2{
+    font-size: var(--rox-fs-seven-two);
+    text-align: center;
+}
 
 
 
@@ -746,6 +751,10 @@ header,
     /* greener-section */
     .greener-inner-content h2{
         font-size: 50px;
+    }
+
+    .greener-boxes{
+        border: none;
     }
 }
 
