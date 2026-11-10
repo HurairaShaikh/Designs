@@ -551,7 +551,7 @@ header,
 
 /* FAQs Section */
 .faq-section {
-    background-color: rgba(154, 192, 246,0.1);
+    background-color: rgba(154, 192, 246, 0.1);
     padding: 20px;
 }
 
@@ -575,6 +575,39 @@ header,
     margin: 10px;
 }
 
+/* second last section */
+.second-last-section {
+    background-color: var(--rox-span-color);
+    color: var(--rox-light-color);
+    border-radius: 26px;
+}
+
+.second-last {
+    padding: 100px 40px 70px 40px;
+}
+
+.second-last h2 {
+    font-size: var(--rox-fs-seven-two);
+}
+
+.second-last .visit-destination a {
+    text-decoration: none;
+    padding: 20px 10px 20px 20px;
+    background-color: var(--rox-light-color);
+    color: var(--rox-text-color);
+    border-radius: 38px;
+}
+
+.second-last .visit-destination img {
+    width: 40px;
+    background-color: var(--rox-span-color);
+}
+
+.second-last-right-side img {
+    width: 633px;
+    position: absolute;
+    bottom: -1%;
+}
 
 
 @media screen and(min-width:1041px) {}
@@ -641,7 +674,18 @@ header,
     }
 
     /* roamex esim  */
-
+    /* second last section */
+    .second-last{
+        padding: 10px 10px 20px 10px ;
+    }
+    .second-last h2{
+        font-size: 60px;
+    }
+     .second-last-right-side img {
+        width: 450px;
+        bottom: -1%;
+        left: 40%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -780,6 +824,20 @@ header,
     .faq-section h2 {
         font-size: 50px;
     }
+
+    /* second last section */
+    .second-last{
+        padding: 20px 20px 400px 20px;
+    }
+    .second-last h2{
+        font-size: 50px;
+    }
+    .second-last-right-side img {
+        width: 433px;
+        bottom: -1%;
+        left: -2%;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -880,5 +938,11 @@ header,
     .web-slider,
     .tab-slider {
         display: none;
+    }
+    /* second last section */
+     .second-last-right-side img {
+        width: 400px;
+        bottom: -1%;
+        left: -5%;
     }
 }
