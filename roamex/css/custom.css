@@ -609,6 +609,12 @@ header,
     bottom: -1%;
 }
 
+/* footer */
+footer {
+    /* margin-top: -200px;
+    height: 70vh;
+    background-color: rgb(199, 255, 236); */
+}
 
 @media screen and(min-width:1041px) {}
 
@@ -675,13 +681,15 @@ header,
 
     /* roamex esim  */
     /* second last section */
-    .second-last{
-        padding: 10px 10px 20px 10px ;
+    .second-last {
+        padding: 10px 10px 20px 10px;
     }
-    .second-last h2{
+
+    .second-last h2 {
         font-size: 60px;
     }
-     .second-last-right-side img {
+
+    .second-last-right-side img {
         width: 450px;
         bottom: -1%;
         left: 40%;
@@ -826,12 +834,14 @@ header,
     }
 
     /* second last section */
-    .second-last{
+    .second-last {
         padding: 20px 20px 400px 20px;
     }
-    .second-last h2{
+
+    .second-last h2 {
         font-size: 50px;
     }
+
     .second-last-right-side img {
         width: 433px;
         bottom: -1%;
@@ -939,8 +949,9 @@ header,
     .tab-slider {
         display: none;
     }
+
     /* second last section */
-     .second-last-right-side img {
+    .second-last-right-side img {
         width: 400px;
         bottom: -1%;
         left: -5%;
