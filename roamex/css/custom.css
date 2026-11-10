@@ -550,11 +550,30 @@ header,
 }
 
 /* FAQs Section */
-.faq-section h2{
+.faq-section {
+    background-color: rgba(154, 192, 246,0.1);
+    padding: 20px;
+}
+
+.faq-section h2 {
     font-size: var(--rox-fs-seven-two);
     text-align: center;
 }
 
+
+.faq-section .accordion-body {
+    color: var(--rox-light-color);
+    background: linear-gradient(to right, var(--rox-primary-color) 30%, var(--rox-light-blue) 100%);
+
+}
+
+.faq-section .accordion-header button {
+    background-color: var(--rox-light-color);
+}
+
+.faq-section .accordion-item {
+    margin: 10px;
+}
 
 
 
@@ -749,12 +768,17 @@ header,
     }
 
     /* greener-section */
-    .greener-inner-content h2{
+    .greener-inner-content h2 {
         font-size: 50px;
     }
 
-    .greener-boxes{
+    .greener-boxes {
         border: none;
+    }
+
+    /* Faq section */
+    .faq-section h2 {
+        font-size: 50px;
     }
 }
 
