@@ -141,6 +141,11 @@ header,
 
 /* Body */
 /* First-section */
+.esim {
+    /* height: 200vh; */
+    position: relative;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -148,6 +153,7 @@ header,
     justify-content: center;
     gap: 20px;
     padding: 20px 0;
+
 }
 
 .hero-section span {
@@ -201,9 +207,10 @@ header,
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    height: 600px;
+    height: 450px;
     width: 1520px;
-    top: 115%;
+    /* top: 115%; */
+    bottom: 0%;
 }
 
 /* Payment links slider */
@@ -232,6 +239,7 @@ header,
 /* boxs:hover svg path  {
     fill: #4487F3;
 } */
+
 .boxs {
     border-radius: 20px;
     padding: 20px 20px;
@@ -242,6 +250,11 @@ header,
     width: 300px;
     border: 1px solid var(--rox-light-color);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.box1 {
+    background-color: var(--rox-dark-blue);
+    color: var(--rox-light-color);
 }
 
 /* activate Section */
@@ -302,6 +315,11 @@ header,
     background-color: var(--rox-bg-color);
     border-radius: 26px;
     margin: 0 0px 20px 10px;
+}
+
+.us {
+    background-color: var(--rox-dark-blue);
+    color: var(--rox-light-color);
 }
 
 .country:hover {
@@ -653,16 +671,12 @@ footer {
         padding-top: 40px;
     }
 
-    .payments {
-        height: 400px;
-        width: 960px;
-        top: 75%;
-        background-size: cover;
+    .mobile-screen img {
+        width: 700px;
     }
-
-    /* .payments {
-        display: none;
-    } */
+    .esim{
+        overflow: hidden;
+    }
 
     /* travel section */
     .dibb img {
@@ -754,10 +768,7 @@ footer {
     }
 
     .payments {
-        height: 400px;
-        width: 410px;
-        top: 80%;
-        background-size: contain;
+        height: 350px;
     }
 
     .payment-bank-slider img {
@@ -926,10 +937,7 @@ footer {
     }
 
     .payments {
-        height: 200px;
-        width: 360px;
-        top: 72%;
-        background-size: contain;
+        height: 300px;
     }
 
     .payment-bank-slider img {
