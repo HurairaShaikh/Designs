@@ -380,6 +380,10 @@ header,
 
 .dibb img {
     width: 300px;
+    transition: transform 0.3s ease;
+}
+.dibb img:hover{
+    transform: scale(1.1);
 }
 
 .dibba3 {
@@ -674,7 +678,8 @@ footer {
     .mobile-screen img {
         width: 700px;
     }
-    .esim{
+
+    .esim {
         overflow: hidden;
     }
 
