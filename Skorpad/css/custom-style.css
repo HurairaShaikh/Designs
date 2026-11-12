@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "Plus-Regular";
+    src: url(../public/fonts/PlusJakartaSans-Regular.woff2) format(woff2),
+        url(../public/fonts/PlusJakartaSans-Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus-Light";
+    src: url(../public/fonts/PlusJakartaSans-Light.woff2) format(woff2),
+        url(../public/fonts/PlusJakartaSans-Light.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas-Bold";
+    src: url(../public/fonts/BebasNeueBold.woff2) format(woff2),
+        url(../public/fonts/BebasNeueBold.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Font Families */
+    --skor-heading-family: "Bebas-Bold";
+    --skor-header-and-footer-family: "Plus-Regular";
+    --skor-primary-family: "Plus-Light";
+
+    /* Colors */
+    --skor-primary-color: #C6A8FF;
+    --skor-light-color: #ffffff;
+    --skor-dark-color: #000000;
+    --skor-little-purple-color: #E69DFF;
+    --skor-dark-purple-color: #CE43FF;
+    --skor-dark-blue-color: #276FFC;
+    --skor-little-black-color: #090814;
+    --skor-border-color: #6D4AC2;
+    --skor-gradient-purple-color: #6D4BC2;
+    --skor-gradient-blue-color: #1C69AF;
+
+    /* Border-Radius */
+    --skor-border-radius-circle: 50%;
+    --skor-border-radius-thirty-four: 34px;
+    --skor-border-radius-twenty-six: 26px;
+
+    /* font-sizes */
+    --skor-fs-154: 124px;
+}
+
+header {
+    font-family: var(--skor-header-and-footer-family);
+}
+
+body {
+    font-family: var(--skor-primary-family);
+    background-color: var(--skor-little-black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--skor-heading-family);
+    background-image: linear-gradient(to right, var(--skor-light-color) 0%, var(--skor-primary-color) 70%);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+p {
+    color: var(--skor-light-color);
+}
+
+/* header */
+.head-inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-inner-content .nav-bar {
+    background: linear-gradient(to bottom, var(--skor-little-black-color) 70%, rgba(28, 105, 175, 0.5));
+    padding: 20px;
+    border: 2px solid var(--skor-gradient-purple-color);
+    border-top: none;
+    border-radius: var(--skor-border-radius-thirty-four);
+    stroke: linear;
+}
+
+.head-inner-content .nav-bar a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--skor-light-color);
+    padding: 10px;
+    border-radius: var(--skor-border-radius-twenty-six);
+}
+
+.headers-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.book {
+    background-color: var(--skor-dark-color);
+    padding: 5px;
+    border: 1px solid var(--skor-light-color);
+    border-radius: var(--skor-border-radius-circle);
+}
+
+.order-now a {
+    text-decoration: none;
+    color: var(--skor-light-color);
+    padding: 12px 15px;
+    border-radius: var(--skor-border-radius-twenty-six);
+    box-shadow: 0 17px 63.6px 0 #2460AA;
+    background: linear-gradient(to right, var(--skor-gradient-purple-color) 0%, var(--skor-gradient-blue-color));
+}
+
+.order-now img {
+    background-color: var(--skor-light-color);
+    border-radius: var(--skor-border-radius-circle);
+    padding: 5px;
+}
+
+/* Body */
+
+/* first-section */
+.first-section {
+    background-image: url(../public/images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: linear-gradient(to right, var(--skor-little-purple-color) ,var(--skor-dark-blue-color)); */
+}
+
+
+.first-section h1 {
+    font-size: var(--skor-fs-154);
+}
+
+.first-inner-content .skorpad-hero-image img {
+    width: 500px;
+    position: absolute;
+}
+
+.first-column-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+}
+
+.pre-order-btn a {
+    text-decoration: none;
+    padding: 13px 15px;
+    background-color: var(--skor-light-color);
+    color: var(--skor-little-black-color);
+    font-weight: bold;
+    border-radius: var(--skor-border-radius-twenty-six);
+}
+
+.pre-order-btn img {
+    /* width: 30px; */
+    background-color: var(--skor-dark-color);
+    border-radius: var(--skor-border-radius-circle);
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.learn-more-btn img {
+    /* width: 30px; */
+    background-color: var(--skor-light-color);
+    padding: 5px;
+    border-radius: var(--skor-border-radius-circle);
+    margin-left: 10px;
+}
+
+.learn-more-btn a {
+    text-decoration: none;
+    padding: 13px 15px;
+    background-color: transparent;
+    color: var(--skor-light-color);
+    border-radius: var(--skor-border-radius-twenty-six);
+    border: 1px solid var(--skor-light-color);
+}
