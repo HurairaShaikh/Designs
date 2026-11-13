@@ -70,6 +70,7 @@
     --skor-h2: 100px;
     --skor-md-text: 30px;
     --skor-card-text: 36px;
+    --skor-mob-h1: 56px;
 }
 
 header {
@@ -92,13 +93,13 @@ h6 {
     font-weight: 700;
 }
 
-h1 {
+/* h1 {
     font-size: var(--skor-fs-h1);
 }
 
 h2 {
     font-size: var(--skor-h2);
-}
+} */
 
 p {
     color: var(--skor-light-color);
@@ -106,10 +107,10 @@ p {
 
 /* heading */
 .skor-gradient-text {
-    line-height: 0.9;
+     line-height: 0.9;
     background: linear-gradient(180deg, var(--skor-light-color) 0%, var(--skor-primary-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     background-clip: text;
     color: transparent;
 }
@@ -161,6 +162,9 @@ p {
     background-color: var(--skor-light-color);
     border-radius: var(--skor-bd-full);
 }
+#mob-nav{
+    display: none;
+}
 
 /* Body */
 
@@ -170,10 +174,19 @@ p {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding: 120px 0 0 0;
+    padding: 140px 0 50px 0;
     /* background: linear-gradient(to right, var(--skor-dark-purple-color) ,var(--skor-gradient-blue-color)); */
-
+    background:
+        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
+        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%);
 }
+/* .hero-section{
+     background:
+        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
+        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%);
+} */
 
 .bg-text-skorepad {
     background-image: url(../public/images/skore-bg-text.png);
@@ -185,7 +198,9 @@ p {
 
 
 .titles h1 {
+    font-size: var(--skor-fs-h1);
     margin-top: -150px;
+   
 }
 
 .first-inner-content {
@@ -200,7 +215,6 @@ p {
     right: 25%;
 }
 
-.bg-text-skorepad {}
 
 .first-column-btns {
     margin-top: 180px;
@@ -305,10 +319,93 @@ p {
 }
 
 
-@media screen and(min-width:1041px) {}
+@media screen and (min-width:1041px) {}
 
-@media screen and(max-width:1040px) {}
+@media screen and (max-width:1040px) {}
 
-@media screen and(max-width:767px) {}
+@media screen and (max-width:767px) {
 
-@media screen and(max-width:400px) {}
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #web-nav {
+        display: none;
+    }
+    #mob-nav{
+        display: block;
+    }
+    #mob-nav .logo img{
+        width: 50px;
+    }
+
+    .first-section {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .titles h1 {
+        margin: 0;
+        font-size: var(--skor-mob-h1);
+    }
+
+    .first-column-btns {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .learn-btn a {
+        margin-left: -20px;
+    }
+
+    .learn-btn {
+        margin-top: 20px;
+    }
+
+    .first-inner-content .skorpad-hero-image img {
+        width: 300px;
+        top: 50%;
+        right: 15%;
+    }
+
+    .bg-text-skorepad {}
+
+    .third-column {
+        padding: 100px 20px 200px 20px;
+        transform: translate(0%, 50%);
+        text-align: start;
+    }
+
+    .third-column h2 {
+        font-size: var(--skor-card-text);
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .first-section{
+        /* padding-top: 40px; */
+    }
+    .titles h1 {
+        /* font-size: 20px; */
+    }
+     #mob-nav .logo img{
+        width: 40px;
+    }
+    first-inner-content .skorpad-hero-image img {
+        width: 300px;
+        top: 45%;
+        right: 23%;
+    }
+}

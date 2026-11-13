@@ -1,0 +1,1175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Plus-Regular";
+    src: url(../public/fonts/PlusJakartaSans-Regular.woff2) format("woff2"),
+        url(../public/fonts/PlusJakartaSans-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus-Light";
+    src: url(../public/fonts/PlusJakartaSans-Light.woff2) format("woff2"),
+        url(../public/fonts/PlusJakartaSans-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas-Bold";
+    src: url(../public/fonts/BebasNeueBold.woff2) format("woff2"),
+        url(../public/fonts/BebasNeueBold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Font Families */
+    --skor-heading-family: "Bebas-Bold", Impact, sans-serif;
+    --skor-header-and-footer-family: "Plus-Regular", sans-serif;
+    --skor-primary-family: "Plus-Light", sans-serif;
+
+    /* Colors */
+    --skor-primary-color: #C6A8FF;
+    --skor-light-color: #ffffff;
+    --skor-dark-color: #000000;
+    --skor-little-purple-color: #E69DFF;
+    --skor-dark-purple-color: #CE43FF;
+    --skor-dark-blue-color: #276FFC;
+    --skor-body: #090814;
+    --skor-border-color: #6D4AC2;
+    --skor-gradient-purple-color: #6D4BC2;
+    --skor-gradient-blue-color: #1C69AF;
+    --skor-line-color: #8D5EFF;
+    --skor-shadow-color: #286FFF;
+    --skor-gray-color: #66666600;
+    --skor-pd-color: #311A69;
+    --skor-liner-color: #2B2B2B;
+
+    /* Border-Radius */
+    --skor-bd-full: 10rem;
+    --skor-bd-1: 30px;
+    --skor-bd-2: 36px;
+    --skor-bd-3: 26px;
+    --skor-bd-4: 16px;
+
+    /* font-sizes */
+    --skor-h1: 154px;
+    --skor-subheading: 24px;
+    --skor-p: 16px;
+    --skor-watermark: 262.78px;
+    --skor-h2: 100px;
+    --skor-md-text: 30px;
+    --skor-card-text: 36px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--skor-primary-family);
+    background-color: var(--skor-body);
+    color: var(--skor-light-color);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--skor-heading-family);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(3.5rem, 9.5vw, var(--skor-h1));
+    line-height: 0.92;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 6.2vw, var(--skor-h2));
+    line-height: 0.95;
+}
+
+p {
+    color: var(--skor-light-color);
+    font-size: var(--skor-p);
+    line-height: 1.65;
+}
+
+/* =========================================================
+   BUTTONS & HEADING UTILITIES
+========================================================= */
+.skor-btn {
+    padding: 10px 12px 10px 25px;
+    border-radius: var(--skor-bd-full);
+    font-family: var(--skor-header-and-footer-family);
+    font-size: var(--skor-p);
+    gap: 18px;
+    transition-duration: 0.4s;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--skor-body);
+    text-decoration: none;
+}
+
+.skor-btn:hover,
+.outline-skore-btn {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.55);
+    color: var(--skor-light-color);
+}
+
+.outline-skore-btn:hover,
+.grad-btn {
+    background: linear-gradient(90deg, var(--skor-gradient-purple-color) 30%, var(--skor-gradient-blue-color) 100%);
+    color: var(--skor-light-color);
+    border-color: transparent;
+}
+
+.white-skor-btn {
+    background-color: var(--skor-light-color);
+    color: var(--skor-body);
+    border-color: var(--skor-light-color);
+    font-weight: 600;
+}
+
+.white-skor-btn:hover {
+    background-color: var(--skor-primary-color);
+    color: var(--skor-body);
+    border-color: var(--skor-primary-color);
+}
+
+.skor-glow-btn {
+    box-shadow: 0 0 28px rgba(40, 111, 255, 0.45);
+}
+
+.skor-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.skor-btn-circle {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--skor-light-color);
+    color: var(--skor-dark-color);
+    border-radius: var(--skor-bd-full);
+    flex-shrink: 0;
+}
+
+.skor-btn-circle.dark-circle {
+    background-color: var(--skor-body);
+    color: var(--skor-light-color);
+}
+
+.skor-gradient-text {
+    background: linear-gradient(180deg, var(--skor-light-color) 15%, var(--skor-primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.skor-section {
+    padding: 90px 0;
+}
+
+.skor-sec-subtitle {
+    max-width: 740px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+}
+
+/* =========================================================
+   HEADER / NAVBAR
+========================================================= */
+.skor-header {
+    background: rgba(9, 8, 20, 0.85);
+    backdrop-filter: blur(14px);
+    padding: 14px 0;
+    z-index: 1030;
+}
+
+.skor-nav-pill {
+    background: linear-gradient(90deg, rgba(49, 26, 105, 0.45) 0%, rgba(28, 105, 175, 0.25) 55%, rgba(20, 18, 42, 0.75) 100%);
+    border: 1px solid rgba(109, 74, 194, 0.55);
+    border-radius: var(--skor-bd-full);
+    padding: 8px 26px;
+    gap: 14px;
+    box-shadow: inset 0 0 24px rgba(141, 94, 255, 0.2);
+}
+
+.skor-nav-pill .nav-link {
+    font-family: var(--skor-header-and-footer-family);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    padding: 8px 14px;
+    transition: color 0.3s ease;
+}
+
+.skor-nav-pill .nav-link:hover,
+.skor-nav-pill .nav-link.active {
+    color: var(--skor-light-color);
+    text-shadow: 0 0 12px rgba(198, 168, 255, 0.7);
+}
+
+.skor-cart-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--skor-bd-full);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--skor-light-color);
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+.skor-cart-btn:hover {
+    border-color: var(--skor-line-color);
+    background: rgba(141, 94, 255, 0.2);
+    color: var(--skor-light-color);
+}
+
+.skor-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 10px;
+}
+
+.skor-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+/* =========================================================
+   SECTION 1: HERO SECTION
+========================================================= */
+.skor-hero-card {
+    position: relative;
+    border-radius: var(--skor-bd-1);
+    padding: 45px 0 50px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
+        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%);
+    border: 1px solid rgba(109, 74, 194, 0.35);
+}
+
+.skor-hero-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--skor-heading-family);
+    font-size: clamp(5rem, 18vw, var(--skor-watermark));
+    letter-spacing: 8px;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.22);
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.skor-hero-tagline {
+    font-family: var(--skor-header-and-footer-family);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.skor-hero-product-wrap {
+    position: relative;
+    max-width: 440px;
+    margin: -30px auto -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-product-aura {
+    position: absolute;
+    width: 115%;
+    height: 115%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(141, 94, 255, 0.55) 0%, rgba(39, 111, 252, 0.3) 45%, transparent 72%);
+    filter: blur(22px);
+    z-index: 0;
+}
+
+.skor-pad-device {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.85));
+}
+
+.skor-hero-desc {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 15px;
+    max-width: 430px;
+}
+
+/* =========================================================
+   SECTION 2: MORE THAN A KICKING BAG
+========================================================= */
+.skor-angled-divider {
+    position: relative;
+    height: 110px;
+    margin-bottom: -40px;
+}
+
+#skor-after-hero{
+    margin-top: -140px;
+}
+
+.skor-floating-pad-top {
+    position: absolute;
+    right: 7%;
+    top: -32px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #2f2f3d, #0d0d14);
+    border: 3px solid #2a2a36;
+    box-shadow: 0 15px 35px rgba(141, 94, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-mini-pad-badge {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #12121a;
+    border: 1px solid #3c3c4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-mini-s {
+    font-family: var(--skor-heading-family);
+    font-size: 30px;
+    background: linear-gradient(135deg, var(--skor-line-color), var(--skor-dark-blue-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skor-s-frame-wrapper {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.skor-s-backdrop {
+    position: absolute;
+    inset: 10% 8%;
+    border-radius: 36px;
+    background: linear-gradient(135deg, rgba(109, 75, 194, 0.45), rgba(255, 255, 255, 0.12));
+    clip-path: polygon(22% 0%, 78% 0%, 100% 22%, 100% 42%, 62% 42%, 100% 64%, 100% 78%, 78% 100%, 22% 100%, 0% 78%, 0% 58%, 38% 58%, 0% 36%, 0% 22%);
+    z-index: 0;
+}
+
+.skor-about-img {
+    position: relative;
+    z-index: 1;
+    border-radius: var(--skor-bd-4);
+    max-height: 430px;
+    object-fit: cover;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.skor-body-lead {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+}
+
+.skor-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-family: var(--skor-header-and-footer-family);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.skor-checklist-sm li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skor-check-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--skor-line-color), var(--skor-dark-blue-color));
+    color: var(--skor-body);
+    font-size: 11px;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   SECTION 3: EIGHT METRICS SWIPER
+========================================================= */
+.skor-metrics-section {
+    background: radial-gradient(circle at 50% 60%, rgba(49, 26, 105, 0.35) 0%, transparent 65%);
+}
+
+.skorMetricsSwiper {
+    padding: 35px 0 45px;
+}
+
+.skor-metric-item {
+    text-align: center;
+    transition: all 0.4s ease;
+    opacity: 0.45;
+    transform: scale(0.94);
+}
+
+.skorMetricsSwiper .swiper-slide-prev .skor-metric-item,
+.skorMetricsSwiper .swiper-slide-next .skor-metric-item {
+    opacity: 0.82;
+    transform: scale(0.98);
+}
+
+.skorMetricsSwiper .swiper-slide-active .skor-metric-item {
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+.skor-metric-box {
+    height: 175px;
+    border-radius: var(--skor-bd-4);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.85);
+    transition: all 0.4s ease;
+}
+
+.skorMetricsSwiper .swiper-slide-active .skor-metric-box {
+    background: linear-gradient(135deg, rgba(141, 94, 255, 0.85) 0%, rgba(39, 111, 252, 0.85) 100%);
+    border-color: rgba(255, 255, 255, 0.45);
+    color: #ffffff;
+    box-shadow: 0 22px 55px rgba(109, 75, 194, 0.65), 0 0 40px rgba(40, 111, 255, 0.45);
+}
+
+.skor-metric-label {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.skorMetricsSwiper .swiper-slide-active .skor-metric-label {
+    color: #ffffff;
+}
+
+.skor-metrics-progress-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skor-metrics-line {
+    position: relative;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    width: 100%;
+}
+
+.skor-metrics-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--skor-line-color);
+    box-shadow: 0 0 14px var(--skor-line-color);
+    transition: left 0.4s ease;
+}
+
+.skor-metrics-counter {
+    font-family: var(--skor-heading-family);
+    font-size: 22px;
+    color: var(--skor-light-color);
+}
+
+/* =========================================================
+   SECTION 4: HELP STUDENTS THRIVE (AUDIENCE CARDS)
+========================================================= */
+.skor-audience-card {
+    background: linear-gradient(180deg, rgba(24, 20, 48, 0.9) 0%, rgba(14, 12, 30, 0.95) 100%);
+    border: 1px solid rgba(109, 74, 194, 0.35);
+    border-radius: var(--skor-bd-1);
+    padding: 20px 20px 28px;
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.skor-audience-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--skor-line-color);
+}
+
+.skor-audience-img-box {
+    position: relative;
+    border-radius: var(--skor-bd-4);
+    overflow: hidden;
+    height: 220px;
+    margin-bottom: 22px;
+}
+
+.skor-audience-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skor-audience-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--skor-gradient-purple-color), var(--skor-dark-blue-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+.skor-audience-badge svg{
+    width: 25px;
+}
+
+.skor-audience-title {
+    font-size: var(--skor-card-text);
+    margin-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+    .skor-stagger-down {
+        margin-top: 56px;
+    }
+}
+
+/* =========================================================
+   SECTION 5: MEASURE PUNCHING POWER & KICKING FORCE
+========================================================= */
+.skor-power-banner {
+    border-radius: var(--skor-bd-1);
+    padding: 65px 0;
+    background: linear-gradient(115deg, #130f38 0%, #2a1c7a 52%, #5e38c9 100%);
+    border: 1px solid rgba(141, 94, 255, 0.35);
+}
+
+.skor-power-intro {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+}
+
+.skor-steps-list {
+    position: relative;
+    padding-left: 26px;
+    border-left: 2px solid rgba(255, 255, 255, 0.16);
+}
+
+.skor-step-item {
+    position: relative;
+    padding-bottom: 24px;
+    cursor: pointer;
+    opacity: 0.38;
+    transition: opacity 0.35s ease;
+}
+
+.skor-step-item:last-child {
+    padding-bottom: 0;
+}
+
+.skor-step-item.active,
+.skor-step-item:hover {
+    opacity: 1;
+}
+
+.skor-step-dot {
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    transition: all 0.35s ease;
+}
+
+.skor-step-item.active .skor-step-dot {
+    background: var(--skor-primary-color);
+    box-shadow: 0 0 14px #ffffff;
+    transform: scale(1.25);
+}
+
+.skor-step-content h4 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.skor-step-num {
+    color: var(--skor-primary-color);
+    margin-right: 10px;
+}
+
+.skor-step-content p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+.skor-power-slider-card {
+    border-radius: var(--skor-bd-3);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.skorPowerSwiper img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.skor-power-pagination .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.55);
+    opacity: 1;
+}
+
+.skor-power-pagination .swiper-pagination-bullet-active {
+    width: 26px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+/* =========================================================
+   SECTION 6: INSTANT FEEDBACK HOTSPOT DIAGRAM
+========================================================= */
+.skor-diagram-stage {
+    position: relative;
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-diagram-s-bg {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    background: linear-gradient(180deg, rgba(109, 75, 194, 0.22), rgba(28, 105, 175, 0.14));
+    clip-path: polygon(22% 0%, 78% 0%, 100% 22%, 100% 42%, 62% 42%, 100% 64%, 100% 78%, 78% 100%, 22% 100%, 0% 78%, 0% 58%, 38% 58%, 0% 36%, 0% 22%);
+    z-index: 0;
+}
+
+.skor-diagram-pad {
+    position: relative;
+    z-index: 2;
+    width: 340px;
+    max-width: 80vw;
+    transform: translate(-30%,0);
+    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45));
+}
+
+.skor-callout {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skor-callout-text {
+    font-family: var(--skor-heading-family);
+    font-size: 22px;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+}
+
+.skor-callout-line {
+    width: 110px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.skor-callout-line-v {
+    width: 1px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.skor-callout-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2), 0 0 15px var(--skor-line-color);
+}
+
+.callout-tl {
+    top: 20%;
+    left: 8%;
+}
+
+.callout-bl {
+    bottom: 24%;
+    left: 5%;
+}
+
+.callout-tr {
+    top: 18%;
+    right: 8%;
+}
+
+.callout-br {
+    bottom: 24%;
+    right: 10%;
+}
+
+.callout-bc {
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    gap: 6px;
+}
+
+@media (max-width: 991px) {
+    .skor-diagram-stage {
+        flex-direction: column;
+        gap: 16px;
+        min-height: auto;
+    }
+    .skor-callout {
+        position: static;
+        transform: none;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(109, 74, 194, 0.4);
+        padding: 10px 18px;
+        border-radius: var(--skor-bd-full);
+    }
+    .skor-callout-line,
+    .skor-callout-line-v {
+        display: none;
+    }
+}
+
+/* =========================================================
+   SECTION 7: REAL STRIKES. INSTANT FEEDBACK.
+========================================================= */
+.skor-real-strikes-banner {
+    position: relative;
+    border-radius: var(--skor-bd-1);
+    overflow: hidden;
+    min-height: 540px;
+    padding: 55px 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.skor-real-strikes-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.skor-real-strikes-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(9, 8, 20, 0.55) 0%, rgba(49, 26, 105, 0.55) 65%, rgba(88, 70, 235, 0.85) 100%);
+    z-index: 1;
+}
+
+/* =========================================================
+   SECTION 8: UPGRADE YOUR TRAINING + 4 TECH CARDS
+========================================================= */
+.skor-kick-bag-visual {
+    position: relative;
+}
+
+.skor-kick-bag-visual::before {
+    content: "";
+    position: absolute;
+    inset: 10%;
+    background: radial-gradient(circle, rgba(141, 94, 255, 0.5) 0%, transparent 70%);
+    filter: blur(25px);
+    z-index: 0;
+}
+
+.skor-kick-bag-visual img {
+    position: relative;
+    z-index: 1;
+    max-height: 390px;
+    object-fit: cover;
+}
+
+.skor-tech-card {
+    height: 100%;
+    border-radius: var(--skor-bd-4);
+    padding: 28px 24px;
+    background: linear-gradient(160deg, rgba(92, 62, 185, 0.65) 0%, rgba(28, 22, 58, 0.85) 100%);
+    border: 1px solid rgba(141, 94, 255, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skor-tech-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--skor-primary-color);
+}
+
+.skor-tech-icon {
+    color: var(--skor-light-color);
+    margin-bottom: 34px;
+}
+
+.skor-tech-title {
+    font-size: 24px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.skor-tech-desc {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 0;
+}
+
+/* =========================================================
+   SECTION 9: OBJECTIVE. ENGAGING. GROWTH-DRIVEN (APP)
+========================================================= */
+.skor-pillar-item {
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.skor-pillar-item:last-child {
+    border-right: none;
+}
+
+.skor-pillar-icon {
+    color: var(--skor-primary-color);
+    margin-bottom: 10px;
+}
+
+.skor-pillar-item h5 {
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 0;
+}
+
+.skor-phone-stage {
+    position: relative;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-wave-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 220px;
+    z-index: 0;
+}
+
+.skor-orbit-thumb {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    /* top: 20%; */
+    padding: 4px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.skor-orbit-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.thumb-left {
+    left: 11%;
+    top: 39%;
+}
+
+.thumb-right {
+    right: 11%;
+    bottom: 39%;
+}
+
+.skor-landscape-phone {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 520px;
+    border-radius: 38px;
+    padding: 12px;
+    background: linear-gradient(135deg, #c9895b, #3c2a4d);
+    box-shadow: 0 0 70px rgba(141, 94, 255, 0.45);
+}
+
+.skor-phone-screen {
+    border-radius: 28px;
+    background: radial-gradient(circle at 50% 40%, #2b3595 0%, #0d1033 100%);
+    padding: 14px 20px 10px;
+    color: #fff;
+}
+
+.skor-app-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--skor-heading-family);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.skor-app-gauge {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION 10: THE JOURNEY BEHIND THE SKORE PAD™
+========================================================= */
+.skor-journey-card {
+    border-radius: var(--skor-bd-1);
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1b1348 0%, #110d2e 55%, #231963 100%);
+    border: 1px solid rgba(109, 74, 194, 0.35);
+    overflow: hidden;
+}
+
+.skor-founders-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.skor-founder-card {
+    position: relative;
+    width: 215px;
+    height: 240px;
+    background: #ffffff;
+    border-radius: var(--skor-bd-4);
+    padding: 10px 10px 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+}
+
+.founder-gary img{
+    /* transform: rotate(-4deg); */
+}
+
+.founder-tyson {
+    /* transform: rotate(4deg); */
+}
+
+.skor-founder-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skor-founder-name {
+    position: absolute;
+    font-family: var(--skor-heading-family);
+    font-size: 26px;
+    color: var(--skor-line-color);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.name-left {
+    top: 14px;
+    left: 10px;
+}
+
+.name-right {
+    bottom: 14px;
+    right: 10px;
+}
+
+/* =========================================================
+   SECTION 11: TESTIMONIALS SWIPER
+========================================================= */
+.skor-nav-circle-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.skor-nav-circle-btn:hover,
+.skor-nav-circle-btn.active {
+    background: var(--skor-line-color);
+    border-color: var(--skor-line-color);
+    box-shadow: 0 0 20px rgba(141, 94, 255, 0.65);
+}
+
+.skor-testimonial-divider {
+    height: 1px;
+    background: linear-gradient(90deg, var(--skor-line-color) 0%, rgba(255, 255, 255, 0.12) 100%);
+}
+
+.skor-testimonial-card {
+    padding-right: 24px;
+    opacity: 0.45;
+    transition: opacity 0.35s ease;
+}
+
+.skorTestimonialsSwiper .swiper-slide-active .skor-testimonial-card {
+    opacity: 1;
+}
+
+.skor-quote-text {
+    font-family: var(--skor-header-and-footer-family);
+    font-size: 20px;
+    line-height: 1.55;
+    color: #ffffff;
+}
+
+.skor-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--skor-line-color);
+}
+
+.skor-author-name {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.skor-author-role {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+/* =========================================================
+   SECTION 12: CTA BANNER & FOOTER
+========================================================= */
+.skor-cta-banner {
+    border-radius: var(--skor-bd-1);
+    background: linear-gradient(95deg, #215ec4 0%, #3d339e 52%, #7236b8 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+.skor-cta-pad-wrap {
+    max-width: 340px;
+    margin: 0 0px 0 0px ;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.65));
+}
+
+.skor-footer-link {
+    font-family: var(--skor-header-and-footer-family);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.skor-footer-link:hover {
+    color: var(--skor-primary-color);
+}
+
+.skor-social-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(141, 94, 255, 0.15);
+    color: #ffffff;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.skor-social-circle:hover {
+    background: var(--skor-line-color);
+    color: #ffffff;
+}
+
+.skor-footer-wordmark span {
+    display: block;
+    font-family: var(--skor-header-and-footer-family);
+    font-weight: 700;
+    font-size: clamp(3.4rem, 15.2vw, 230px);
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    user-select: none;
+}
+
+.skor-footer-wordmark sup {
+    font-size: 0.22em;
+    vertical-align: super;
+}
+
+.skor-copyright-bar {
+    background: linear-gradient(90deg, var(--skor-gradient-purple-color), var(--skor-dark-blue-color));
+    color: #ffffff;
+    font-size: 12px;
+}
