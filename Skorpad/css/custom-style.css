@@ -172,9 +172,10 @@ p {
     background-size: cover;
     padding: 120px 0 0 0;
     /* background: linear-gradient(to right, var(--skor-dark-purple-color) ,var(--skor-gradient-blue-color)); */
-   
+
 }
-.bg-text-skorepad{
+
+.bg-text-skorepad {
     background-image: url(../public/images/skore-bg-text.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -189,7 +190,7 @@ p {
 
 .first-inner-content {
     display: flex;
-   
+
 }
 
 .first-inner-content .skorpad-hero-image img {
@@ -199,9 +200,7 @@ p {
     right: 25%;
 }
 
-.bg-text-skorepad {
-  
-}
+.bg-text-skorepad {}
 
 .first-column-btns {
     margin-top: 180px;
@@ -304,3 +303,12 @@ p {
     opacity: 0.9;
     color: var(--skor-light-color);
 }
+
+
+@media screen and(min-width:1041px) {}
+
+@media screen and(max-width:1040px) {}
+
+@media screen and(max-width:767px) {}
+
+@media screen and(max-width:400px) {}
