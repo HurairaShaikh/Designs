@@ -107,7 +107,7 @@ p {
 
 /* heading */
 .skor-gradient-text {
-     line-height: 0.9;
+    line-height: 0.9;
     background: linear-gradient(180deg, var(--skor-light-color) 0%, var(--skor-primary-color) 100%);
     background-clip: text;
     color: transparent;
@@ -162,7 +162,8 @@ p {
     background-color: var(--skor-light-color);
     border-radius: var(--skor-bd-full);
 }
-#mob-nav{
+
+#mob-nav {
     display: none;
 }
 
@@ -181,6 +182,7 @@ p {
         radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
         linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%);
 }
+
 /* .hero-section{
      background:
         radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
@@ -200,7 +202,7 @@ p {
 .titles h1 {
     font-size: var(--skor-fs-h1);
     margin-top: -150px;
-   
+
 }
 
 .first-inner-content {
@@ -280,10 +282,26 @@ p {
 }
 
 /* Second-section */
+.second-section h2 {
+    font-size: var(--skor-h2);
+}
 
+.second-sec-lines {
+    margin-top: -260px;
+}
 
+.second-sec-inner-content img {
+    width: 530px;
+}
 
+.second-sec-inner-content ul img {
+    width: 18px;
+}
 
+.second-section ul {
+    list-style: none;
+    padding: 0;
+}
 
 
 
@@ -335,10 +353,12 @@ p {
     #web-nav {
         display: none;
     }
-    #mob-nav{
+
+    #mob-nav {
         display: block;
     }
-    #mob-nav .logo img{
+
+    #mob-nav .logo img {
         width: 50px;
     }
 
@@ -386,6 +406,26 @@ p {
         font-size: var(--skor-card-text);
     }
 
+    /* Second section */
+    .second-sec-lines {
+        display: none;
+    }
+
+    .second-section h2 {
+        font-size: var(--skor-card-text);
+    }
+
+    .second-sec-inner-content img {
+        width: 330px;
+    }
+
+    .second-sec-inner-content ul img {
+        width: 18px;
+    }
+
+    .second-section ul {
+        list-style: none;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -395,15 +435,19 @@ p {
         width: 100%;
         overflow-x: hidden;
     }
-    .first-section{
+
+    .first-section {
         /* padding-top: 40px; */
     }
+
     .titles h1 {
         /* font-size: 20px; */
     }
-     #mob-nav .logo img{
+
+    #mob-nav .logo img {
         width: 40px;
     }
+
     first-inner-content .skorpad-hero-image img {
         width: 300px;
         top: 45%;
