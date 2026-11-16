@@ -151,6 +151,27 @@ p {
     border: 1px solid var(--skor-light-color);
     border-radius: var(--skor-bd-full);
 }
+.skor-btn {
+    padding: 10px 12px 10px 25px;
+    border-radius: var(--skor-bd-full);
+    font-family: var(--skor-header-and-footer-family);
+    font-size: var(--skor-p);
+    gap: 18px;
+    border: none;
+    transition-duration: 0.5s;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--skor-body);
+    text-decoration: none;
+     border: none;
+    background: linear-gradient(90deg, var(--skor-gradient-purple-color) 30%, var(--skor-gradient-blue-color) 100%);
+    color: var(--skor-light-color);
+}
+
+.skor-btn:hover {
+    opacity: 0.9;
+    color: var(--skor-light-color);
+}
 
 .now a {
     box-shadow: 0 17px 63.6px 0 #2460AA;
@@ -230,7 +251,7 @@ p {
 .pre-btn a {
     text-decoration: none;
     padding: 13px 15px;
-    background-color: var(--skor-light-color);
+    /* background-color: var(--skor-light-color); */
     color: var(--skor-little-black-color);
     font-weight: bold;
     border-radius: var(--skor-bd-3);
@@ -295,7 +316,11 @@ p {
 }
 
 .second-sec-inner-content ul img {
-    width: 18px;
+    width: 28px;
+    margin-bottom: 10px;
+}
+.second-sec-inner-content p,.second-sec-inner-content span{
+    font-size: var(--skor-md-text);
 }
 
 .second-section ul {
@@ -306,19 +331,7 @@ p {
 
 
 /* buttons */
-.skor-btn {
-    padding: 10px 12px 10px 25px;
-    border-radius: var(--skor-bd-full);
-    font-family: var(--skor-header-and-footer-family);
-    font-size: var(--skor-p);
-    gap: 18px;
-    border: none;
-    transition-duration: 0.5s;
-    display: inline-flex;
-    align-items: center;
-    border: 1px solid var(--skor-body);
-    text-decoration: none;
-}
+
 
 .outline-skore-btn {
     border-color: var(--skor-light-color);
@@ -332,10 +345,6 @@ p {
     color: var(--skor-light-color);
 }
 
-.skor-btn:hover {
-    opacity: 0.9;
-    color: var(--skor-light-color);
-}
 
 
 @media screen and (min-width:1041px) {}
@@ -421,6 +430,10 @@ p {
 
     .second-sec-inner-content ul img {
         width: 18px;
+        margin-top: 5px;
+    }
+    .second-sec-inner-content p,.second-sec-inner-content span{
+        font-size: var(--skor-p);
     }
 
     .second-section ul {

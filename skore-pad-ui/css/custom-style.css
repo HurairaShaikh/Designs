@@ -199,9 +199,11 @@ p {
 /* =========================================================
    HEADER / NAVBAR
 ========================================================= */
+
 .skor-header {
-    background: rgba(9, 8, 20, 0.85);
+    /* background: rgba(9, 8, 20, 0.85); */
     backdrop-filter: blur(14px);
+    background-color: transparent;
     padding: 14px 0;
     z-index: 1030;
 }
@@ -264,33 +266,45 @@ p {
 /* =========================================================
    SECTION 1: HERO SECTION
 ========================================================= */
+.skor-hero-section {
+    
+/*     
+    background:
+        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
+        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%); */
+}
+.bg-hero-image{
+    /* background-image: url("../public/images/skorepad_-_banner\ \(1080p\)\ 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.hero-image-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.bg-color-gradient-hero{
+ position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(9, 8, 20, 0.55) 0%, rgba(49, 26, 105, 0.55) 65%, rgba(88, 70, 235, 0.85) 100%);
+    z-index: 1;
+}
+
+
 .skor-hero-card {
     position: relative;
     border-radius: var(--skor-bd-1);
     padding: 45px 0 50px;
     overflow: hidden;
-    background:
-        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
-        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
-        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%);
-    border: 1px solid rgba(109, 74, 194, 0.35);
+
+    /* border: 1px solid rgba(109, 74, 194, 0.35); */
 }
 
-.skor-hero-watermark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--skor-heading-family);
-    font-size: clamp(5rem, 18vw, var(--skor-watermark));
-    letter-spacing: 8px;
-    white-space: nowrap;
-    color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.22);
-    pointer-events: none;
-    user-select: none;
-    z-index: 1;
-}
 
 .skor-hero-tagline {
     font-family: var(--skor-header-and-footer-family);
@@ -331,7 +345,39 @@ p {
 }
 
 /* =========================================================
-   SECTION 2: MORE THAN A KICKING BAG
+             SECTION 2: Boxes
+        ========================================================== */
+.dibbas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 80px 50px;
+    text-align: center;
+    gap: 20px;
+}
+
+.dibba {
+    padding: 40px 20px;
+    border-radius: var(--skor-bd-3);
+    border: 1px solid #d7d7d7;
+    border-right: none;
+    border-top: none;
+    background-color: rgba(217, 217, 217, 0.1);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15),
+        0 12px 24px -6px rgba(0, 0, 0, 0.6);
+
+}
+
+
+/* .dibba:hover{
+    border: 3px solid ;
+} */
+
+
+
+/* =========================================================
+   SECTION 3: MORE THAN A KICKING BAG
 ========================================================= */
 .skor-angled-divider {
     position: relative;
@@ -339,7 +385,7 @@ p {
     margin-bottom: -40px;
 }
 
-#skor-after-hero{
+#skor-after-hero {
     margin-top: -140px;
 }
 
@@ -437,8 +483,18 @@ p {
     flex-shrink: 0;
 }
 
+
+
 /* =========================================================
-   SECTION 3: EIGHT METRICS SWIPER
+   SECTION 4: Training into Progress
+========================================================= */
+.speed-score img {
+    width: 600px;
+
+}
+
+/* =========================================================
+   SECTION 5: EIGHT METRICS SWIPER
 ========================================================= */
 .skor-metrics-section {
     background: radial-gradient(circle at 50% 60%, rgba(49, 26, 105, 0.35) 0%, transparent 65%);
@@ -529,7 +585,7 @@ p {
 }
 
 /* =========================================================
-   SECTION 4: HELP STUDENTS THRIVE (AUDIENCE CARDS)
+   SECTION 6: HELP STUDENTS THRIVE (AUDIENCE CARDS)
 ========================================================= */
 .skor-audience-card {
     background: linear-gradient(180deg, rgba(24, 20, 48, 0.9) 0%, rgba(14, 12, 30, 0.95) 100%);
@@ -571,8 +627,17 @@ p {
     justify-content: center;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
-.skor-audience-badge svg{
+
+.skor-audience-badge svg {
     width: 25px;
+}
+
+.skor-audience-card .shows-on-section {
+    display: none;
+}
+
+.skor-audience-card:hover .shows-on-section {
+    display: block;
 }
 
 .skor-audience-title {
@@ -587,7 +652,7 @@ p {
 }
 
 /* =========================================================
-   SECTION 5: MEASURE PUNCHING POWER & KICKING FORCE
+   SECTION 7: MEASURE PUNCHING POWER & KICKING FORCE
 ========================================================= */
 .skor-power-banner {
     border-radius: var(--skor-bd-1);
@@ -682,7 +747,7 @@ p {
 }
 
 /* =========================================================
-   SECTION 6: INSTANT FEEDBACK HOTSPOT DIAGRAM
+   SECTION 8: INSTANT FEEDBACK HOTSPOT DIAGRAM
 ========================================================= */
 .skor-diagram-stage {
     position: relative;
@@ -692,22 +757,26 @@ p {
     justify-content: center;
 }
 
-.skor-diagram-s-bg {
+/* .skor-diagram-s-bg {
     position: absolute;
     width: 480px;
     height: 480px;
     background: linear-gradient(180deg, rgba(109, 75, 194, 0.22), rgba(28, 105, 175, 0.14));
     clip-path: polygon(22% 0%, 78% 0%, 100% 22%, 100% 42%, 62% 42%, 100% 64%, 100% 78%, 78% 100%, 22% 100%, 0% 78%, 0% 58%, 38% 58%, 0% 36%, 0% 22%);
     z-index: 0;
-}
+} */
 
 .skor-diagram-pad {
-    position: relative;
+    /* position: relative;
     z-index: 2;
     width: 340px;
     max-width: 80vw;
     transform: translate(-30%,0);
-    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45));
+    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45)); */
+}
+
+.skor-diagram-pad img {
+    width: 500px;
 }
 
 .skor-callout {
@@ -779,6 +848,7 @@ p {
         gap: 16px;
         min-height: auto;
     }
+
     .skor-callout {
         position: static;
         transform: none;
@@ -787,43 +857,17 @@ p {
         padding: 10px 18px;
         border-radius: var(--skor-bd-full);
     }
+
     .skor-callout-line,
     .skor-callout-line-v {
         display: none;
     }
 }
 
-/* =========================================================
-   SECTION 7: REAL STRIKES. INSTANT FEEDBACK.
-========================================================= */
-.skor-real-strikes-banner {
-    position: relative;
-    border-radius: var(--skor-bd-1);
-    overflow: hidden;
-    min-height: 540px;
-    padding: 55px 0;
-    display: flex;
-    align-items: stretch;
-}
 
-.skor-real-strikes-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.skor-real-strikes-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(9, 8, 20, 0.55) 0%, rgba(49, 26, 105, 0.55) 65%, rgba(88, 70, 235, 0.85) 100%);
-    z-index: 1;
-}
 
 /* =========================================================
-   SECTION 8: UPGRADE YOUR TRAINING + 4 TECH CARDS
+   SECTION 9: UPGRADE YOUR TRAINING + 4 TECH CARDS
 ========================================================= */
 .skor-kick-bag-visual {
     position: relative;
@@ -840,9 +884,10 @@ p {
 
 .skor-kick-bag-visual img {
     position: relative;
-    z-index: 1;
-    max-height: 390px;
+    z-index: -1;
+    /* max-height: 390px; */
     object-fit: cover;
+    transform: translateY(40%);
 }
 
 .skor-tech-card {
@@ -852,6 +897,7 @@ p {
     background: linear-gradient(160deg, rgba(92, 62, 185, 0.65) 0%, rgba(28, 22, 58, 0.85) 100%);
     border: 1px solid rgba(141, 94, 255, 0.35);
     transition: transform 0.3s ease, border-color 0.3s ease;
+    z-index: 2;
 }
 
 .skor-tech-card:hover {
@@ -877,7 +923,7 @@ p {
 }
 
 /* =========================================================
-   SECTION 9: OBJECTIVE. ENGAGING. GROWTH-DRIVEN (APP)
+   SECTION 10: OBJECTIVE. ENGAGING. GROWTH-DRIVEN (APP)
 ========================================================= */
 .skor-pillar-item {
     border-right: 1px solid rgba(255, 255, 255, 0.14);
@@ -905,15 +951,11 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.skor-wave-bg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 220px;
-    z-index: 0;
+.skor-phone-stage svg{
+    z-index: -1;
 }
+
+
 
 .skor-orbit-thumb {
     position: absolute;
@@ -936,49 +978,50 @@ p {
 
 .thumb-left {
     left: 11%;
-    top: 39%;
+    top: 32%;
 }
 
 .thumb-right {
     right: 11%;
-    bottom: 39%;
+    bottom: 24%;
 }
 
-.skor-landscape-phone {
-    position: relative;
+#landscape-phone{
+    width: 834px;
     z-index: 2;
-    width: 100%;
-    max-width: 520px;
-    border-radius: 38px;
-    padding: 12px;
-    background: linear-gradient(135deg, #c9895b, #3c2a4d);
-    box-shadow: 0 0 70px rgba(141, 94, 255, 0.45);
-}
-
-.skor-phone-screen {
-    border-radius: 28px;
-    background: radial-gradient(circle at 50% 40%, #2b3595 0%, #0d1033 100%);
-    padding: 14px 20px 10px;
-    color: #fff;
-}
-
-.skor-app-topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--skor-heading-family);
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-.skor-app-gauge {
-    max-width: 340px;
-    margin: 0 auto;
+    transform: translate(45%,-90%);
 }
 
 /* =========================================================
-   SECTION 10: THE JOURNEY BEHIND THE SKORE PAD™
+   SECTION 11: THE JOURNEY BEHIND THE SKORE PAD™
 ========================================================= */
+.skor-angled-divider-sec {
+    position: relative;
+    height: 110px;
+    margin-bottom: -40px;
+    margin-top: 40px;
+}
+
+.skor-floating-pad-top-sec {
+    position: absolute;
+    /* margin-top: 20px; */
+    right: 7%;
+    top: -32px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #2f2f3d, #0d0d14);
+    border: 3px solid #2a2a36;
+    box-shadow: 0 15px 35px rgba(141, 94, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skor-sec-heading-sec-10{
+    margin-top: -150px;
+}
+
 .skor-journey-card {
     border-radius: var(--skor-bd-1);
     padding: 60px 0;
@@ -1006,13 +1049,18 @@ p {
     overflow: hidden;
 }
 
-.founder-gary img{
-    /* transform: rotate(-4deg); */
+.founder-gary {
+    transform: rotate(-8deg);
+    margin-right: -10px;
 }
 
 .founder-tyson {
-    /* transform: rotate(4deg); */
+    transform: rotate(8deg);
 }
+.founder-gary:hover,.founder-tyson:hover{
+    transform: rotate(0deg);
+}
+
 
 .skor-founder-card img {
     width: 100%;
@@ -1038,11 +1086,11 @@ p {
 
 .name-right {
     bottom: 14px;
-    right: 10px;
+    right: -10px;
 }
 
 /* =========================================================
-   SECTION 11: TESTIMONIALS SWIPER
+   SECTION 12: TESTIMONIALS SWIPER
 ========================================================= */
 .skor-nav-circle-btn {
     width: 42px;
@@ -1105,7 +1153,7 @@ p {
 }
 
 /* =========================================================
-   SECTION 12: CTA BANNER & FOOTER
+   SECTION 13: CTA BANNER & FOOTER
 ========================================================= */
 .skor-cta-banner {
     border-radius: var(--skor-bd-1);
@@ -1116,7 +1164,7 @@ p {
 
 .skor-cta-pad-wrap {
     max-width: 340px;
-    margin: 0 0px 0 0px ;
+    margin: 0 0px 0 0px;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.65));
 }
 
@@ -1172,4 +1220,27 @@ p {
     background: linear-gradient(90deg, var(--skor-gradient-purple-color), var(--skor-dark-blue-color));
     color: #ffffff;
     font-size: 12px;
+}
+
+@media screen and (max-width:1040px) {
+    .dibbas {
+        flex-wrap: wrap;
+    }
+    .speed-score img{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .dibbas {
+        flex-wrap: wrap;
+    }
+    .dibba{
+        /* width: 200px; */
+    }
+
+    .speed-score img {
+        width: 350px;
+        padding: 0;
+    }
 }
