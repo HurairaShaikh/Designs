@@ -1593,6 +1593,67 @@ p {
 
 }
 
+/* sixth section */
+.skor-nav-circle-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.skor-nav-circle-btn:hover,
+.skor-nav-circle-btn.active {
+    background: var(--skor-line-color);
+    border-color: var(--skor-line-color);
+    box-shadow: 0 0 20px rgba(141, 94, 255, 0.65);
+}
+
+.skor-testimonial-divider {
+    height: 1px;
+    background: linear-gradient(90deg, var(--skor-line-color) 0%, rgba(255, 255, 255, 0.12) 100%);
+}
+
+.skor-testimonial-card {
+    padding-right: 24px;
+    opacity: 0.45;
+    transition: opacity 0.35s ease;
+}
+
+.skorTestimonialsSwiperPro .swiper-slide-active .skor-testimonial-card {
+    opacity: 1;
+}
+
+.skor-quote-text {
+    font-family: var(--skor-header-and-footer-family);
+    font-size: 20px;
+    line-height: 1.55;
+    color: #ffffff;
+}
+
+.skor-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--skor-line-color);
+}
+
+.skor-author-name {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.skor-author-role {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
 @media screen and (max-width:1040px) {
 
     html,

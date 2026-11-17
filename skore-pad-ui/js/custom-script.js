@@ -119,3 +119,22 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+
+
+
+    const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".testimonial-next",
+            prevEl: ".testimonial-prev"
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1.65,
+                spaceBetween: 45
+            }
+        }
+    });
