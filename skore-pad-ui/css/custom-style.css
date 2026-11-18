@@ -1735,7 +1735,9 @@ p {
 #fighting1 {
     transform: rotate(-6deg);
 }
-#fighting1:hover,#fighting2:hover{
+
+#fighting1:hover,
+#fighting2:hover {
     transform: rotate(0deg);
 }
 
@@ -1751,30 +1753,57 @@ p {
 }
 
 /* eight-section */
-.eight-left-side img{
+.eight-left-side img {
     width: 400px;
 }
-.before-plus-after-image::before{
+
+.before-plus-after-image::before {
     content: url("../public/images/before.png");
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.before-plus-after-image::after{
+
+.before-plus-after-image::after {
     content: url("../public/images/after.png");
     position: absolute;
     right: 0;
     top: -20%;
     z-index: -1;
+    width: 200px;
 
 }
 
-/* .accordion p{
+.eight-section .accordion-item:first-of-type>.accordion-header .accordion-button {
+    background: none;
+    background-color: rgba(109, 74, 194,0.7);
     color: var(--skor-light-color);
+    border: none;
     font-weight: bold;
+}
+
+/* .eight-section .accordion-header{
+    border: none;
 } */
 
-.accordion-item{
+/* .eight-section .accordion .accordion-flush {
+    border: 0;
+    border-radius: var(--skor-bd-3);
+} */
+
+.eight-section .accordion-button::after {
+    color: var(--skor-light-color);
+    background-image: url("../public/images/plus.png");
+
+}
+
+.eight-section .accordion-body {
+      background-color: rgba(109, 74, 194,0.7);
+    color: var(--skor-light-color);
+    border: none;
+}
+
+.accordion-item {
     margin: 20px;
 }
 
@@ -1858,22 +1887,25 @@ p {
     }
 
     /* seventh secion */
-    .seventh-section svg, .seventh-sec-image{
+    .seventh-section svg,
+    .seventh-sec-image {
         display: none;
     }
 
-    .seventh-section-row{
+    .seventh-section-row {
         padding-top: 0;
     }
-    .seventh-left-side{
+
+    .seventh-left-side {
         flex-direction: column;
     }
+
     .seventh-left-side img {
         width: 220px;
         background-color: var(--skor-light-color);
         border-radius: var(--skor-bd-3);
         padding: 20px;
-        
+
     }
 
     #fighting1 {
@@ -1883,10 +1915,15 @@ p {
     #fighting2 {
         transform: rotate(0deg);
     }
-    .seventh-right-side{
+
+    .seventh-right-side {
         margin-top: 20px;
     }
-    
+
+    /* eight-section */
+    .before-plus-after-image {
+        display: none;
+    }
 }
 
 @media screen and (max-width:400px) {
