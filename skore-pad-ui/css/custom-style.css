@@ -1594,6 +1594,10 @@ p {
 }
 
 /* sixth section */
+.sixth-section {
+    position: relative;
+}
+
 .skor-nav-circle-btn {
     width: 42px;
     height: 42px;
@@ -1614,10 +1618,6 @@ p {
     box-shadow: 0 0 20px rgba(141, 94, 255, 0.65);
 }
 
-.skor-testimonial-divider {
-    height: 1px;
-    background: linear-gradient(90deg, var(--skor-line-color) 0%, rgba(255, 255, 255, 0.12) 100%);
-}
 
 .skor-testimonial-card {
     padding-right: 24px;
@@ -1661,6 +1661,7 @@ p {
     line-height: 1;
     margin: 0;
     user-select: none;
+    text-transform: lowercase;
 
     /* 1. Make the text fill transparent and add a thin light outline */
     color: transparent;
@@ -1673,6 +1674,80 @@ p {
     mask-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 1) 25%,
             rgba(0, 0, 0, 0) 100%);
+}
+
+.curved-lines {
+    position: absolute;
+    bottom: -10%;
+}
+
+#mob-hr {
+    display: none;
+}
+
+/* seventh-section */
+.seventh-section {
+    background: linear-gradient(115deg, #130f38 0%, #2a1c7a 52%, #5e38c9 100%);
+    padding: 60px 40px 90px 40px;
+    position: relative;
+    border-radius: var(--skor-bd-3);
+}
+
+.seventh-section svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.seventh-sec-image {
+    position: absolute;
+    width: 120px;
+    right: 10%;
+    top: 7%;
+}
+
+.seventh-sec-img1 {
+    background-color: var(--skor-light-color);
+    border-radius: var(--skor-bd-full);
+    padding: 5px;
+}
+
+.seventh-sec-img2 {
+    background-color: var(--skor-dark-color);
+    border-radius: var(--skor-bd-full);
+    padding: 5px;
+}
+
+.seventh-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.seventh-left-side img {
+    height: 220px;
+    background-color: var(--skor-light-color);
+    border-radius: var(--skor-bd-3);
+    padding: 20px;
+}
+
+#fighting1 {
+    transform: rotate(-6deg);
+}
+#fighting1:hover,#fighting2:hover{
+    transform: rotate(0deg);
+}
+
+#fighting2 {
+    transform: rotate(6deg);
+}
+
+.seventh-section-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 @media screen and (max-width:1040px) {
@@ -1696,6 +1771,7 @@ p {
     .fifth-section-row {
         flex-wrap: wrap;
     }
+
 }
 
 @media screen and (max-width:767px) {
@@ -1739,6 +1815,47 @@ p {
     #union {
         display: none;
     }
+
+    /* sixth-section */
+    .curved-lines {
+        display: none;
+    }
+
+    #mob-hr {
+        display: block;
+        border: 1px solid var(--skor-line-color);
+    }
+
+    /* seventh secion */
+    .seventh-section svg, .seventh-sec-image{
+        display: none;
+    }
+
+    .seventh-section-row{
+        padding-top: 0;
+    }
+    .seventh-left-side{
+        flex-direction: column;
+    }
+    .seventh-left-side img {
+        width: 220px;
+        background-color: var(--skor-light-color);
+        border-radius: var(--skor-bd-3);
+        padding: 20px;
+        
+    }
+
+    #fighting1 {
+        transform: rotate(0deg);
+    }
+
+    #fighting2 {
+        transform: rotate(0deg);
+    }
+    .seventh-right-side{
+        margin-top: 20px;
+    }
+    
 }
 
 @media screen and (max-width:400px) {
