@@ -1208,7 +1208,7 @@ p {
 }
 
 .skor-social-circle:hover {
-    background: var(--skor-line-color);
+    background: var(--skor-light-color);
     color: #ffffff;
 }
 
@@ -1679,6 +1679,7 @@ p {
 .curved-lines {
     position: absolute;
     bottom: -10%;
+    z-index: -1;
 }
 
 #mob-hr {
@@ -1776,10 +1777,11 @@ p {
 
 .eight-section .accordion-item:first-of-type>.accordion-header .accordion-button {
     background: none;
-    background-color: rgba(109, 74, 194,0.7);
+    background-color: rgba(109, 74, 194, 0.7);
     color: var(--skor-light-color);
     border: none;
     font-weight: bold;
+    box-shadow: none;
 }
 
 /* .eight-section .accordion-header{
@@ -1798,7 +1800,7 @@ p {
 }
 
 .eight-section .accordion-body {
-      background-color: rgba(109, 74, 194,0.7);
+    background-color: rgba(109, 74, 194, 0.7);
     color: var(--skor-light-color);
     border: none;
 }
@@ -1808,9 +1810,34 @@ p {
 }
 
 
+/* ninth-section */
+.ninth-section {
+    border-radius: var(--skor-bd-3);
+
+    /* background-image: url(../public/images/ninth-section.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; */
+    padding: 40px;
+    background: linear-gradient(115deg, #130f38 0%, #2a1c7a 52%, #5e38c9 100%);
+
+}
+
+/* .ninth-section-row {
+    z-index: -21;
+} */
+
+.ninth-right-side img {
+    width: 600px;
+    position: absolute;
+    right: -2%;
+    bottom: 0%;
+}
 
 
-@media screen and (max-width:1040px) {
+
+@media screen and (max-width:1032px) {
 
     html,
     body {
@@ -1830,6 +1857,12 @@ p {
     /* fifth section */
     .fifth-section-row {
         flex-wrap: wrap;
+    }
+
+     .ninth-right-side img {
+        width: 500px;
+        right: -5%;
+        bottom: 0%;
     }
 
 }
@@ -1923,6 +1956,17 @@ p {
     /* eight-section */
     .before-plus-after-image {
         display: none;
+    }
+
+    /* ninth-section */
+    .ninth-section {
+        padding: 40px 20px 190px 20px;
+    }
+
+    .ninth-right-side img {
+        width: 300px;
+        right: 10%;
+        bottom: 0%;
     }
 }
 

@@ -90,51 +90,51 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Product page Slider
- const progressDotPro = document.getElementById("metricsProgressDotPro");
-    const activeNumberElPro = document.getElementById("metricsActiveNumberPro");
+const progressDotPro = document.getElementById("metricsProgressDotPro");
+const activeNumberElPro = document.getElementById("metricsActiveNumberPro");
 
-    const metricsSwiperPro = new Swiper(".skorMetricsSwiperPro", {
-        slidesPerView: 1.6,
-        spaceBetween: 18,
-        centeredSlides: true,
-        loop: true,
-        grabCursor: true,
-        slideToClickedSlide: true,
-        breakpoints: {
-            576: { slidesPerView: 2.6, spaceBetween: 20 },
-            768: { slidesPerView: 4.2, spaceBetween: 22 },
-            1200: { slidesPerView: 6.4, spaceBetween: 24 }
-        },
-        on: {
-            slideChange: function () {
-                const realIdx = this.realIndex; // 0 to 7
-                const total = 8;
-                if (activeNumberElPro) {
-                    activeNumberElPro.textContent = String(realIdx + 1).padStart(2, "0");
-                }
-                if (progressDotPro) {
-                    const percent = ((realIdx + 0.5) / total) * 100;
-                    progressDotPro.style.left = `${percent}%`;
-                }
+const metricsSwiperPro = new Swiper(".skorMetricsSwiperPro", {
+    slidesPerView: 1.6,
+    spaceBetween: 18,
+    centeredSlides: true,
+    loop: true,
+    grabCursor: true,
+    slideToClickedSlide: true,
+    breakpoints: {
+        576: { slidesPerView: 2.6, spaceBetween: 20 },
+        768: { slidesPerView: 4.2, spaceBetween: 22 },
+        1200: { slidesPerView: 6.4, spaceBetween: 24 }
+    },
+    on: {
+        slideChange: function () {
+            const realIdx = this.realIndex; // 0 to 7
+            const total = 8;
+            if (activeNumberElPro) {
+                activeNumberElPro.textContent = String(realIdx + 1).padStart(2, "0");
+            }
+            if (progressDotPro) {
+                const percent = ((realIdx + 0.5) / total) * 100;
+                progressDotPro.style.left = `${percent}%`;
             }
         }
-    });
+    }
+});
 
 
 
-    const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        grabCursor: true,
-        navigation: {
-            nextEl: ".testimonial-next",
-            prevEl: ".testimonial-prev"
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 1.65,
-                spaceBetween: 45
-            }
+const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".testimonial-next",
+        prevEl: ".testimonial-prev"
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1.65,
+            spaceBetween: 45
         }
-    });
+    }
+});
