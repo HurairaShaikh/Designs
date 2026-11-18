@@ -1750,6 +1750,37 @@ p {
     padding-top: 100px;
 }
 
+/* eight-section */
+.eight-left-side img{
+    width: 400px;
+}
+.before-plus-after-image::before{
+    content: url("../public/images/before.png");
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.before-plus-after-image::after{
+    content: url("../public/images/after.png");
+    position: absolute;
+    right: 0;
+    top: -20%;
+    z-index: -1;
+
+}
+
+/* .accordion p{
+    color: var(--skor-light-color);
+    font-weight: bold;
+} */
+
+.accordion-item{
+    margin: 20px;
+}
+
+
+
+
 @media screen and (max-width:1040px) {
 
     html,
