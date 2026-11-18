@@ -138,3 +138,14 @@ const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
         }
     }
 });
+
+
+let btns = document.querySelectorAll(".accordion-button");
+btns.forEach((btn,index) => {
+    if(index==0){
+      btn.classList.toggle("accordion-button1");
+    } 
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("accordion-button1");
+    });
+});
