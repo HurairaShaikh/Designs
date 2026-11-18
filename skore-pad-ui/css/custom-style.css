@@ -1249,9 +1249,9 @@ p {
         flex-wrap: wrap;
     }
 
-    .dibba {
-        /* width: 200px; */
-    }
+    /* .dibba {
+        width: 200px;
+    } */
 
     .speed-score img {
         width: 350px;
@@ -1277,7 +1277,7 @@ p {
     border-radius: var(--skor-bd-3);
 }
 
-.first-left-side {}
+
 
 .more-pros {
     display: flex;
@@ -1344,11 +1344,20 @@ p {
     gap: 30px;
 }
 
-.increase-btn span {
-    padding: 10px 40px;
-    /* padding: 10px; */
+.increase-btn .increase-inner-content {
+
+    padding: 10px 10px;
+    color: var(--skor-light-color);
     border-radius: var(--skor-bd-1);
     background-color: rgba(217, 217, 217, 0.2)
+}
+
+.increase-inner-content a {
+    text-decoration: none;
+    color: var(--skor-light-color);
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 .right-sides-btns {
@@ -1385,13 +1394,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 80px 50px;
     text-align: center;
     gap: 20px;
 }
 
 .second-sec-dibba {
+    width: 220px;
     padding: 40px 20px;
     border-radius: var(--skor-bd-3);
     border: 1px solid #d7d7d7;
@@ -1867,12 +1877,75 @@ p {
         flex-wrap: wrap;
     }
 
+    /* SIXTH-SECTION */
+    .curved-lines {
+        bottom: -5%;
+    }
+
     .ninth-right-side img {
         width: 500px;
         right: -5%;
         bottom: 0%;
     }
 
+}
+
+@media screen and (max-width:961px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* first section */
+    .first-left-side .skorpad {
+        width: 400px;
+        transform: translate(-12%, 6%);
+    }
+
+    .right-sides-btns a {
+        width: 20rem;
+    }
+
+    /* fifth section */
+    .fifth-section-row {
+        flex-wrap: wrap;
+    }
+
+    /* SIXTH-SECTION */
+    .curved-lines {
+        bottom: -5%;
+    }
+
+    /* Seventh secion */
+    .seventh-left-side {
+        flex-direction: column;
+    }
+
+    .seventh-left-side img {
+        height: 250px;
+    }
+
+    #fighting1 {
+        transform: rotate(0deg);
+    }
+
+    #fighting1:hover,
+    #fighting2:hover {
+        transform: rotate(6deg);
+    }
+
+    #fighting2 {
+        transform: rotate(0deg);
+    }
+
+    /* ninth section */
+    .ninth-right-side img {
+        width: 500px;
+        right: -5%;
+        bottom: 0%;
+    }
 }
 
 @media screen and (max-width:767px) {

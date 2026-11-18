@@ -139,12 +139,29 @@ const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
     }
 });
 
-
+// accordion btn when click on it changes icon...
+let plus = document.getElementById("plus-quantity");
+let minus = document.getElementById("minus-quantity");
+let total = document.getElementById("total");
+let count = 1;
+plus.addEventListener("click", (e) => {
+    e.preventDefault();
+    count += 1;
+    total.innerText = count;
+});
+minus.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (Number(total.innerText) <= 0) {
+        return;
+    }
+    count -= 1;
+    total.innerText = count;
+});
 let btns = document.querySelectorAll(".accordion-button");
-btns.forEach((btn,index) => {
-    if(index==0){
-      btn.classList.toggle("accordion-button1");
-    } 
+btns.forEach((btn, index) => {
+    if (index == 0) {
+        btn.classList.toggle("accordion-button1");
+    }
     btn.addEventListener("click", () => {
         btn.classList.toggle("accordion-button1");
     });
