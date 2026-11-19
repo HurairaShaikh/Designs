@@ -139,7 +139,7 @@ const testimonialsSwiperPro = new Swiper(".skorTestimonialsSwiperPro", {
     }
 });
 
-// accordion btn when click on it changes icon...
+
 let plus = document.getElementById("plus-quantity");
 let minus = document.getElementById("minus-quantity");
 let total = document.getElementById("total");
@@ -157,6 +157,8 @@ minus.addEventListener("click", (e) => {
     count -= 1;
     total.innerText = count;
 });
+
+// accordion btn when click on it changes icon...
 let btns = document.querySelectorAll(".accordion-button");
 btns.forEach((btn, index) => {
     if (index == 0) {
