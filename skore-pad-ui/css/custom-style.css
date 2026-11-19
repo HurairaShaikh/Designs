@@ -269,21 +269,21 @@ p {
 /* =========================================================
    SECTION 1: HERO SECTION
 ========================================================= */
-.skor-hero-section {
+/* .skor-hero-section {
 
-    /*     
+       
     background:
         radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
         radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
-        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%); */
-}
+        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%); 
+} */
 
-.bg-hero-image {
-    /* background-image: url("../public/images/skorepad_-_banner\ \(1080p\)\ 2.png");
+/* .bg-hero-image {
+    background-image: url("../public/images/skorepad_-_banner\ \(1080p\)\ 2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
-}
+    background-position: center;
+} */
 
 .hero-image-bg {
     position: absolute;
@@ -425,7 +425,7 @@ p {
     font-family: var(--skor-heading-family);
     font-size: 30px;
     background: linear-gradient(135deg, var(--skor-line-color), var(--skor-dark-blue-color));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -598,7 +598,7 @@ p {
     border: 1px solid rgba(109, 74, 194, 0.35);
     border-radius: var(--skor-bd-1);
     padding: 20px 20px 28px;
-    transition: transform 0.35s ease, border-color 0.35s ease;
+    transition: transform 2s ease-in, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .skor-audience-card:hover {
@@ -772,14 +772,14 @@ p {
     z-index: 0;
 } */
 
-.skor-diagram-pad {
-    /* position: relative;
+/* .skor-diagram-pad {
+    position: relative;
     z-index: 2;
     width: 340px;
     max-width: 80vw;
     transform: translate(-30%,0);
-    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45)); */
-}
+    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45));
+} */
 
 .skor-diagram-pad img {
     width: 500px;
