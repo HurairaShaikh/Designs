@@ -1594,7 +1594,7 @@ p {
 
 .fifth-section {
     background: linear-gradient(115deg, #130f38 0%, #2a1c7a 52%, #5e38c9 100%);
-    padding: 100px 100px 50px 100px;
+    padding: 70px 100px 50px 100px;
     position: relative;
     border-radius: var(--skor-bd-3);
 }
@@ -1606,8 +1606,9 @@ p {
 }
 
 .dibbas-inner-images p {
-    font-size: var(--skor-card-text);
-    font-weight: bold;
+    font-family: var(--skor-heading-family);
+    font-size: var(--skor-product-size);
+    font-weight: bolder;
     color: var(--skor-gradient-purple-color);
 }
 
@@ -1617,7 +1618,7 @@ p {
     justify-content: center;
     gap: 10px;
     flex-wrap: nowrap;
-    margin-top: 200px;
+    margin-top: 100px;
     position: relative;
 }
 
@@ -1625,7 +1626,12 @@ p {
     padding: 20px 10px;
     background-color: color-mix(in srgb, var(--skor-gradient-purple-color) 60%, transparent);
     border-radius: var(--skor-bd-3);
+    height: 320px;
     width: 210px;
+}
+
+.fifth-dibbas h5 {
+    font-size: var(--skor-card-text);
 }
 
 #union {
