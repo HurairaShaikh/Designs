@@ -10,8 +10,6 @@
     border-radius: var(--skor-bd-3);
 }
 
-
-
 .more-pros {
     display: flex;
     align-items: center;
@@ -459,7 +457,6 @@
 
 /* seventh-section */
 .seventh-section {
-    /* background: linear-gradient(115deg, #130f38 0%, #2a1c7a 52%, #5e38c9 100%); */
     background: #6C4DE9;
     background: linear-gradient(90deg, rgba(108, 77, 233, 1) 0%, rgba(109, 75, 194, 1) 100%);
     padding: 60px 40px 90px 40px;
@@ -580,13 +577,6 @@
     color: var(--skor-light-color);
 }
 
-/* .eight-section .accordion-body {
-    background-color: rgba(45, 36, 106, 1);
-     color: var(--skor-light-color);
-   
-    border: none;
-} */
-
 .accordion-item {
     margin: 20px;
 }
@@ -595,21 +585,11 @@
 /* ninth-section */
 .ninth-section {
     border-radius: var(--skor-bd-3);
-
-    /* background-image: url(../public/images/ninth-section.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1; */
     padding: 40px;
     background: #286FFF;
     background: linear-gradient(90deg, rgba(40, 111, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(206, 67, 255, 1) 100%);
 
 }
-
-/* .ninth-section-row {
-    z-index: -21;
-} */
 
 .ninth-right-side img {
     width: 600px;

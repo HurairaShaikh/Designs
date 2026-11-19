@@ -204,7 +204,7 @@ p {
 ========================================================= */
 
 .skor-header {
-    /* background: rgba(9, 8, 20, 0.85); */
+    background: rgba(9, 8, 20, 0.85);
     backdrop-filter: blur(14px);
     background-color: transparent;
     padding: 14px 0;
@@ -266,24 +266,14 @@ p {
     margin: 4px 0;
 }
 
+#skorNavMenu {
+    background-color: none;
+}
+
 /* =========================================================
    SECTION 1: HERO SECTION
 ========================================================= */
-/* .skor-hero-section {
 
-       
-    background:
-        radial-gradient(circle at 22% 62%, rgba(141, 94, 255, 0.65) 0%, transparent 45%),
-        radial-gradient(circle at 78% 72%, rgba(39, 111, 252, 0.65) 0%, transparent 48%),
-        linear-gradient(180deg, #090814 0%, #1c1245 48%, #342182 100%); 
-} */
-
-/* .bg-hero-image {
-    background-image: url("../public/images/skorepad_-_banner\ \(1080p\)\ 2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 
 .hero-image-bg {
     position: absolute;
@@ -307,8 +297,6 @@ p {
     border-radius: var(--skor-bd-1);
     padding: 45px 0 50px;
     overflow: hidden;
-
-    /* border: 1px solid rgba(109, 74, 194, 0.35); */
 }
 
 
@@ -364,22 +352,21 @@ p {
 }
 
 .dibba {
+    height: 200px;
     padding: 40px 20px;
     border-radius: var(--skor-bd-3);
-    border: 1px solid #d7d7d7;
-    border-right: none;
-    border-top: none;
-    background-color: rgba(217, 217, 217, 0.1);
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#23222b, #1d1c24) padding-box,
+        linear-gradient(155deg,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(255, 255, 255, 0.12) 35%,
+            rgba(255, 255, 255, 0.08) 70%,
+            rgba(255, 255, 255, 0.45) 100%) border-box;
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15),
         0 12px 24px -6px rgba(0, 0, 0, 0.6);
 
 }
-
-
-/* .dibba:hover{
-    border: 3px solid ;
-} */
-
 
 
 /* =========================================================
@@ -763,24 +750,6 @@ p {
     justify-content: center;
 }
 
-/* .skor-diagram-s-bg {
-    position: absolute;
-    width: 480px;
-    height: 480px;
-    background: linear-gradient(180deg, rgba(109, 75, 194, 0.22), rgba(28, 105, 175, 0.14));
-    clip-path: polygon(22% 0%, 78% 0%, 100% 22%, 100% 42%, 62% 42%, 100% 64%, 100% 78%, 78% 100%, 22% 100%, 0% 78%, 0% 58%, 38% 58%, 0% 36%, 0% 22%);
-    z-index: 0;
-} */
-
-/* .skor-diagram-pad {
-    position: relative;
-    z-index: 2;
-    width: 340px;
-    max-width: 80vw;
-    transform: translate(-30%,0);
-    filter: drop-shadow(0 25px 50px rgba(109, 75, 194, 0.45));
-} */
-
 .skor-diagram-pad img {
     width: 500px;
 }
@@ -989,14 +958,17 @@ p {
 }
 
 .thumb-right {
-    right: 11%;
-    bottom: 24%;
+    right: 8%;
+    bottom: 30%;
 }
 
 #landscape-phone {
+    position: absolute;
     width: 834px;
-    z-index: 2;
-    transform: translate(45%, -90%);
+    /* z-index: 2; */
+    top: 0;
+    left: 20%;
+    transform: translate(-5%, -90%);
 }
 
 /* =========================================================
@@ -1164,21 +1136,19 @@ p {
 /* =========================================================
    SECTION 13: CTA BANNER & FOOTER
 ========================================================= */
-.skor-cta-banner {
-    border-radius: var(--skor-bd-1);
-    background: linear-gradient(95deg, #215ec4 0%, #3d339e 52%, #7236b8 100%);
-    overflow: hidden;
-    position: relative;
+.ninth-section {
+    border-radius: var(--skor-bd-3);
+    padding: 40px;
+    background: #286FFF;
+    background: linear-gradient(90deg, rgba(40, 111, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(206, 67, 255, 1) 100%);
+
 }
 
-.skor-cta-pad-wrap {
-    max-width: 340px;
-    margin: 0 0px 0 0px;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.65));
-}
-
-.skor-cta-pad-wrap svg {
-    transform: translate(-20%, 0%);
+.ninth-right-side img {
+    width: 600px;
+    position: absolute;
+    right: -2%;
+    bottom: 0%;
 }
 
 .skor-footer-link {
@@ -1246,13 +1216,15 @@ p {
 }
 
 @media screen and (max-width:767px) {
+    .skor-nav-pill {
+        background-color: none;
+        border: none;
+        box-shadow: none;
+    }
+
     .dibbas {
         flex-wrap: wrap;
     }
-
-    /* .dibba {
-        width: 200px;
-    } */
 
     .speed-score img {
         width: 350px;
@@ -1267,4 +1239,3 @@ p {
         display: none;
     }
 }
-
