@@ -95,7 +95,7 @@ p {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: var(--slate-light-black);
+    /* background-color: var(--slate-light-black); */
     font-size: var(--slate-font-sm);
     /* padding: 10px; */
 }
@@ -123,5 +123,13 @@ p {
 
 /* hero-section */
 .hero-section{
-    background-color: var(--slate-light-black);
+    background-image: url(../public/images/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 400px 10px;
+    margin-top: -50px;
+    color: var(--slate-light-color);
+}
+.hero-section h1{
+    font-size: var(--slate-font-h1);
 }
