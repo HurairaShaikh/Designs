@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Tactic-Bold";
+    src: url(../public/fonts/TacticSans-Bld.woff2) format(woff2),
+        url(../public/fonts/TacticSans-Bld.woff) format(woff);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Tactic-Regular";
+    src: url(../public/fonts/TacticSansExd-Reg.woff2) format(woff2),
+        url(../public/fonts/TacticSansExd-Reg.woff2) format(woff);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Tactic-Medium";
+    src: url(../public/fonts/TacticSans-Med.woff2) format(woff2),
+        url(../public/fonts/TacticSans-Med.woff2) format(woff);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font families */
+    --slate-heading-family: "Tactic-Bold";
+    --slate-body-family: "Tactic-Regular";
+    --slate-third-family: "Tactic-Medium";
+
+    /* font sizes */
+    --slate-font-h1: 56px;
+    --slate-font-h2: 36px;
+    --slate-font-md: 16px;
+    --slate-font-sm: 14px;
+
+    /* colors */
+    --slate-light-black: #161515;
+    --slate-light-color: #ffffff;
+    --slate-dark-color: #000000;
+    --slate-little-dark-color: #333030;
+    --slate-dark-white: #FAFAFA;
+    --slate-body-color: #E6E6E6;
+    --slate-gray-shade1: #EDEDED;
+    --slate-gray-shade2: #D9DADA;
+    --slate-gray-shade3: #C7C7C7;
+    --slate-gray-shade4: #D9D9D9;
+    --slate-gray-shade5: #9DA1A1;
+    --slate-watermark-color: #CFCFCF;
+    --slate-placeholder-color: #AEAEAE;
+
+}
+
+body {
+    background-color: var(--slate-body-color);
+    font-family: var(--slate-body-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--slate-heading-family);
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--slate-body-family);
+}
+
+/* header */
+.head-section {
+    background-color: var(--slate-light-black);
+    line-height: 40px;
+}
+
+.announce-text {
+    color: var(--slate-light-color);
+    font-size: var(--slate-font-sm);
+}
+
+.navigation-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: var(--slate-light-black); */
+    font-size: var(--slate-font-sm);
+    /* padding: 10px; */
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--slate-light-color);
+    margin-left: 10px;
+}
+
+.nav-bar select {
+    background-color: transparent;
+    border: none;
+    color: var(--slate-light-color);
+    margin-left: 10px;
+}
+
+.menus a {
+    text-decoration: none;
+}
+
+
+
+/* hero-section */
+.hero-section{
+    background-image: url(../public/images/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 400px 10px;
+    margin-top: -50px;
+    color: var(--slate-light-color);
+}
+.hero-section h1{
+    font-size: var(--slate-font-h1);
+}
