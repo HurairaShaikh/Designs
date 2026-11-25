@@ -21,19 +21,69 @@
 
         <section class="">
             <div class="container navigation-section  position-relative">
-                <div class="nav-bar">
+                <div class="nav-bar web-nav">
                     <select id="product">
                         <option value="Shop All">Shop All</option>
                     </select>
                     <a href="#">Find your Product</a>
                     <a href="#">About Slate</a>
                 </div>
+
+                <!-- Mobile NavBAr -->
+                <nav class="navbar mob-nav">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <div class="slate-logo">
+                                    <img src="./public/images/blacklogo.png" alt="Slate Logo">
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Shop All
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Find You Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About Slate</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
                 <div class="slate-logo">
                     <img src="./public/images/logo.png" alt="Slate Logo">
                 </div>
                 <div class="menus">
                     <a href="#">
-                        <img src="./public/images/usa.png" alt="USA flag">
+                        <img id="web-flag" src="./public/images/usa.png" alt="USA flag">
                     </a>
                     <a href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,22 +124,42 @@
 
     <section>
         <div class="container hero-section position-relative">
-            <div class="swiper mySwiper ">
+            <div class="swiper mySwiper  web-banners">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide hero-slid">
                         <img src="./public/images/banner 1.png" alt="First Banner">
                     </div>
                     <div class="swiper-slide hero-slid">
-                        <img src="./public/images/banner 2.png" alt="First Banner">
+                        <img src="./public/images/banner 2.png" alt="Second Banner">
                     </div>
                     <div class="swiper-slide hero-slid">
-                        <img src="./public/images/banner 3.png" alt="First Banner">
+                        <img src="./public/images/banner 3.png" alt="Third Banner">
                     </div>
                     <div class="swiper-slide hero-slid">
-                        <img src="./public/images/banner 4.png" alt="First Banner">
+                        <img src="./public/images/banner 4.png" alt="Fourth Banner">
                     </div>
                     <div class="swiper-slide hero-slid">
-                        <img src="./public/images/banner 5.png" alt="First Banner">
+                        <img src="./public/images/banner 5.png" alt="Fifth Banner">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper mySwiperMob mob-banners-sli">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slid">
+                        <img src="./public/images/mob-banner1.png" alt="First Banner">
+                    </div>
+                    <div class="swiper-slide hero-slid">
+                        <img src="./public/images/mob-banner2.png" alt="Second Banner">
+                    </div>
+                    <div class="swiper-slide hero-slid">
+                        <img src="./public/images/mob-banner3.png" alt="Third Banner">
+                    </div>
+                    <div class="swiper-slide hero-slid">
+                        <img src="./public/images/mob-banner4.png" alt="Fourth Banner">
+                    </div>
+                    <div class="swiper-slide hero-slid">
+                        <img src="./public/images/mob-banner-5.png" alt="Fifth Banner">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
