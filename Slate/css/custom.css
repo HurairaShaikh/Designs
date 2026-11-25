@@ -43,6 +43,7 @@
     --slate-font-h2: 36px;
     --slate-font-md: 16px;
     --slate-font-sm: 14px;
+    --slate-font-xsm: 12px;
 
     /* colors */
     --slate-light-black: #161515;
@@ -129,6 +130,10 @@ p {
     /* background-color: var(--slate-light-black); */
     font-size: var(--slate-font-sm);
     padding: 0px 10px;
+    position: absolute;
+    left: 0;
+    top:30px;
+    z-index: 2;
 }
 
 .nav-bar a {
@@ -144,13 +149,6 @@ p {
     margin-left: 10px;
 }
 
-/* .menus{
-    display: flex;
-    gap: 10px;
-    align-items: flex-end;
-    justify-content: flex-end;
-} */
-
 .menus a {
     text-decoration: none;
     margin-right: 10px;
@@ -162,38 +160,42 @@ p {
 
 
 /* hero-section */
-.hero-section {
-    background-image: url(../public/images/Rectangle\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 200PX 20px 300px 20px;
-    margin-top: -30px;
+/* .hero-section {
+   
+} */
+
+.hero-left-side {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    z-index: 1;
     color: var(--slate-light-color);
 }
 
-.hero-section h1 {
+.hero-left-side h1 {
     text-transform: uppercase;
     font-size: var(--slate-font-h1);
 }
 
-.hero-section span,
-.hero-section p {
+.hero-left-side span,
+.hero-left-side p {
     font-size: var(--slate-font-sm);
 }
 
-/* .hero-right-side{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;    
-} */
+.hero-section .swiper {
+    width: 100%;
+    height: 592px;
 
+}
 
-
+.hero-slid img {
+    width: 100%;
+    object-fit: cover;
+}
 
 /* second section */
 
-.second-dibbas{
+.second-dibbas {
     display: flex;
     gap: 10px;
 }
@@ -228,4 +230,42 @@ p {
 .second-sec-inner img {
     width: 16px;
     margin-left: 0;
+}
+
+
+
+
+@media screen and (min-width:1033px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:1032px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:961px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:767px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+     .announce-text{
+        font-size: var(--slate-font-xsm);
+    }
+}
+@media screen and (max-width:400px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+   
 }
