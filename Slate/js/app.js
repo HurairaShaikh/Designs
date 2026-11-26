@@ -18,6 +18,7 @@ var swiperMob = new Swiper('.mySwiperMob', {
     },
 
 });
+// Second Section slider
 var swiperMobCards1 = new Swiper('.mySwiperCards1', {
     spaceBetween:20,
     slidesPerView:3,
@@ -30,3 +31,7 @@ var swiperMobCards2 = new Swiper('.mySwiperCards2', {
     loop: true,
 
 });
+
+// Third Section Slider
+
+

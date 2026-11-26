@@ -219,17 +219,20 @@ p {
     padding-top: 10px;
 }
 
-.second-sec-dibba img {
+.second-sec-dibba picture {
     width: 100px;
-    /* margin-left: -10px; */
 }
+.sets-pic{
+    transform: translateY(10%);
+}
+
 
 .second-sec-inner {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-self: center;
-    /* margin-left: -70px; */
+    margin-left: 25px;
     margin-top: 30px;
     padding: 10px;
 }
@@ -247,6 +250,12 @@ p {
 
 .mob-cardss {
     display: none;
+}
+
+/* Third Section */
+.third-section h2{
+    text-transform: uppercase;
+    font-size: var(--slate-font-h2);
 }
 
 
@@ -436,6 +445,9 @@ p {
 
     .mob-cardss {
         display: block;
+    }
+    .second-sec-inner{
+        margin-left: 49px;
     }
 }
 
