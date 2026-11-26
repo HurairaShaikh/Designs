@@ -96,6 +96,11 @@ h2 {
     color: var(--slate-light-black);
 }
 
+h6 {
+    text-transform: uppercase;
+    color: var(--slate-light-black);
+}
+
 /* Btns styling  */
 .slate-light-btn {
     text-decoration: none;
@@ -139,6 +144,16 @@ h2 {
     border-color: var(--slate-light-color);
 }
 
+.slate-hollow-border {
+    text-decoration: none;
+    color: var(--slate-light-black);
+}
+
+.slate-hollow-border:hover {
+    background-color: var(--slate-light-color);
+    padding: 10px 20px;
+    border-radius: var(--slate-br-1);
+}
 
 
 /* header */
@@ -286,12 +301,6 @@ h2 {
 
 /* Third Section */
 
-
-.third-dibba h6 {
-    text-transform: uppercase;
-    color: var(--slate-light-black);
-}
-
 .third-section p {
     font-size: var(--slate-font-sm);
     color: var(--slate-light-black);
@@ -324,12 +333,25 @@ h2 {
 }
 
 /* Fourth Section */
-.fourth-section {}
+/* .fourth-section {} */
 
 .fourth-above-sec {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.fourth-dibba img {
+    width: 360px;
+}
+
+.fourth-dibba a {
+    text-decoration: none;
+    color: var(--slate-light-black);
+}
+
+.fourth-dibba a img {
+    width: auto;
 }
 
 
@@ -390,6 +412,25 @@ h2 {
 
     .slate-dark-btn img {
         width: auto;
+    }
+
+    /* fourth section */
+    .fourth-dibba {
+        height: 580px;
+    }
+
+    .fourth-dibbas .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: var(--slate-gray-shade7);
+        opacity: 1;
+        border-radius: 999px;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+    .fourth-dibbas .swiper-pagination-bullet-active {
+        width: 24px;
+        background-color: var(--slate-gray-shade6);
     }
 
 }
@@ -634,6 +675,10 @@ h2 {
         font-size: var(--slate-font-lg);
     }
 
+    .fourth-dibba img {
+        width: 330px;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -674,5 +719,10 @@ h2 {
 
     .slate-dark-btn img {
         width: auto;
+    }
+
+    /* fourth section */
+    .fourth-dibba img {
+        width: 320px;
     }
 }
