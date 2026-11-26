@@ -59,6 +59,8 @@
     --slate-gray-shade3: #C7C7C7;
     --slate-gray-shade4: #D9D9D9;
     --slate-gray-shade5: #9DA1A1;
+    --slate-gray-shade6: #505050;
+    --slate-gray-shade7: #b4b4b4;
     --slate-watermark-color: #CFCFCF;
     --slate-placeholder-color: #AEAEAE;
 
@@ -88,6 +90,12 @@ p {
     font-family: var(--slate-body-family);
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: var(--slate-font-h2);
+    color: var(--slate-light-black);
+}
+
 /* Btns styling  */
 .slate-light-btn {
     text-decoration: none;
@@ -95,6 +103,12 @@ p {
     background-color: var(--slate-light-color);
     padding: 10px 20px;
     border-radius: var(--slate-br-1);
+}
+
+.slate-light-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--slate-light-color);
+    color: var(--slate-light-color);
 }
 
 .slate-dark-btn {
@@ -106,18 +120,26 @@ p {
     border-radius: var(--slate-br-1);
 }
 
-.slate-light-btn:hover {
-    background-color: transparent;
-    border: 1px solid var(--slate-light-color);
-    color: var(--slate-light-color);
-}
-
-/*
-
 .slate-dark-btn:hover {
     color: var(--slate-light-black);
+    background-color: transparent;
+    border: 1px solid var(--slate-light-black);
+}
+
+.slate-hollow-btn {
+    text-decoration: none;
+    color: var(--slate-light-black);
+    border: 1px solid var(--slate-light-black);
+    padding: 10px 20px;
+    border-radius: var(--slate-br-1);
+}
+
+.slate-hollow-btn:hover {
     background-color: var(--slate-light-color);
-} */
+    border-color: var(--slate-light-color);
+}
+
+
 
 /* header */
 .head-section {
@@ -208,11 +230,21 @@ p {
     display: none;
 }
 
-/* second section */
+.web-banners .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: var(--slate-light-color);
+    opacity: 1;
+    border-radius: 999px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
 
-/* .second-dibbas {
-    
-} */
+.web-banners .swiper-pagination-bullet-active {
+    height: 24px;
+    background-color: var(--slate-gray-shade6);
+}
+
+/* second section */
 
 .second-sec-dibba {
     display: flex;
@@ -253,13 +285,16 @@ p {
 
 
 /* Third Section */
-.third-section h2 {
+
+
+.third-dibba h6 {
     text-transform: uppercase;
-    font-size: var(--slate-font-h2);
+    color: var(--slate-light-black);
 }
 
 .third-section p {
     font-size: var(--slate-font-sm);
+    color: var(--slate-light-black);
 }
 
 .third-dibba a {
@@ -288,6 +323,14 @@ p {
     display: none;
 }
 
+/* Fourth Section */
+.fourth-section {}
+
+.fourth-above-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 @media screen and (min-width:1033px) {
@@ -309,6 +352,21 @@ p {
 
     .Mob-View {
         display: block;
+        height: 690px;
+    }
+
+    .Mob-View .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: var(--slate-gray-shade7);
+        opacity: 1;
+        border-radius: 999px;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+    .Mob-View .swiper-pagination-bullet-active {
+        width: 24px;
+        background-color: var(--slate-gray-shade6);
     }
 
     .second-sec-dibba {
@@ -404,6 +462,7 @@ p {
     /* Third Section */
     .Mob-View {
         display: block;
+        height: 530px;
     }
 
     .third-dibbas {
@@ -477,6 +536,20 @@ p {
         display: block;
     }
 
+    .mob-banners-sli .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: var(--slate-light-color);
+        opacity: 1;
+        border-radius: 999px;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+    .mob-banners-sli .swiper-pagination-bullet-active {
+        width: 24px;
+        background-color: var(--slate-gray-shade6);
+    }
+
     .hero-section .swiper {
         width: 100%;
         height: 700px;
@@ -506,7 +579,7 @@ p {
     }
 
     /* Second secion */
-    .second-dibbas {}
+    /* .second-dibbas {} */
 
     .second-sec-dibba {
         width: auto;
@@ -524,6 +597,7 @@ p {
     /* Third section */
     .Mob-View {
         display: block;
+        height: 420px;
     }
 
     .third-section h2 {
@@ -549,6 +623,17 @@ p {
     .slate-dark-btn img {
         width: auto;
     }
+
+    /* fourth section */
+    .fourth-above-sec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fourth-above-sec h2 {
+        font-size: var(--slate-font-lg);
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -570,6 +655,10 @@ p {
     }
 
     /* third section */
+    .Mob-View {
+        height: 380px;
+    }
+
     .third-dibba img {
         width: 150px;
     }
