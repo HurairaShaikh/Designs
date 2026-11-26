@@ -1,5 +1,12 @@
 var swiper = new Swiper('.mySwiper', {
     direction: 'vertical',
+    //  breakpoints: {
+    //         576: { slidesPerView: 1, spaceBetween: 10 },
+    //         768: { direction:"vertical",  slidesPerView: 1,},
+    //         1032: {direction:"vertical",  slidesPerView: 1,  },
+    //         1200: {direction:"vertical",  slidesPerView: 1, },
+    //         1400: {direction:"vertical",  slidesPerView: 1, }
+    //     },
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -19,23 +26,22 @@ var swiperMob = new Swiper('.mySwiperMob', {
 
 });
 // Second Section slider
-var swiperMobCards1 = new Swiper('.mySwiperCards1', {
-    spaceBetween:20,
-    slidesPerView:3,
-    loop: true,
-
-});
 var swiperMobCards2 = new Swiper('.mySwiperCards2', {
-    // spaceBetween:10,
-    slidesPerView:1.2,
+    breakpoints: {
+            576: { slidesPerView: 1.3, spaceBetween: 10 },
+            768: { slidesPerView: 1.6, spaceBetween:10 },
+            1032: { slidesPerView: 2, spaceBetween:10 },
+            1200: { slidesPerView: 3, spaceBetween: 24 }
+        },
     loop: true,
 
 });
 
 // Third Section Slider
 var mySwiperThirdSec = new Swiper('.mySwiperThirdSec', {
-    spaceBetween:20,
-    slidesPerView:2,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    // effect: "fade",
     loop: true,
     pagination: {
         el: '.swiper-pagination',
