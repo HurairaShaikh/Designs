@@ -342,7 +342,7 @@ h6 {
 }
 
 .fourth-dibba img {
-    width: 360px;
+    width: 100%;
 }
 
 .fourth-dibba a {
@@ -374,7 +374,7 @@ h6 {
 
     .Mob-View {
         display: block;
-        height: 690px;
+        height: 730px;
     }
 
     .Mob-View .swiper-pagination-bullet {
@@ -406,7 +406,7 @@ h6 {
     }
 
     .third-dibba img {
-        width: 450px;
+        width: 100%;
     }
 
 
@@ -416,7 +416,7 @@ h6 {
 
     /* fourth section */
     .fourth-dibba {
-        height: 580px;
+        height: 630px;
     }
 
     .fourth-dibbas .swiper-pagination-bullet {
@@ -503,7 +503,7 @@ h6 {
     /* Third Section */
     .Mob-View {
         display: block;
-        height: 530px;
+        height: 600px;
     }
 
     .third-dibbas {
@@ -511,7 +511,7 @@ h6 {
     }
 
     .third-dibba img {
-        width: 300px;
+        width: 100%;
     }
 
 
@@ -650,7 +650,7 @@ h6 {
     }
 
     .third-dibba img {
-        width: 190px;
+        width: 100%;
     }
 
     .third-dibba h6 {
@@ -676,7 +676,7 @@ h6 {
     }
 
     .fourth-dibba img {
-        width: 330px;
+        width: 100%;
     }
 
 }
@@ -705,7 +705,7 @@ h6 {
     }
 
     .third-dibba img {
-        width: 150px;
+        width: 100%;
     }
 
     .third-dibba h6 {
@@ -723,6 +723,6 @@ h6 {
 
     /* fourth section */
     .fourth-dibba img {
-        width: 320px;
+        width: 100%;
     }
 }
