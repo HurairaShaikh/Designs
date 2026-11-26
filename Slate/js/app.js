@@ -28,11 +28,11 @@ var swiperMob = new Swiper('.mySwiperMob', {
 // Second Section slider
 var swiperMobCards2 = new Swiper('.mySwiperCards2', {
     breakpoints: {
-            576: { slidesPerView: 1.3, spaceBetween: 10 },
-            768: { slidesPerView: 1.6, spaceBetween:10 },
-            1032: { slidesPerView: 2, spaceBetween:10 },
-            1200: { slidesPerView: 3, spaceBetween: 24 }
-        },
+        576: { slidesPerView: 1.3, spaceBetween: 10 },
+        768: { slidesPerView: 1.6, spaceBetween: 10 },
+        1032: { slidesPerView: 2, spaceBetween: 10 },
+        1200: { slidesPerView: 3, spaceBetween: 24 }
+    },
     loop: true,
 
 });
@@ -53,11 +53,11 @@ var mySwiperThirdSec = new Swiper('.mySwiperThirdSec', {
 // Fourth Section
 var mySwiperFourthSec = new Swiper('.mySwiperFourthSec', {
     breakpoints: {
-            576: { slidesPerView: 1, spaceBetween: 1},
-            768: { slidesPerView: 1.6, spaceBetween:10 },
-            1032: { slidesPerView: 2, spaceBetween:10 ,},
-            1200: { slidesPerView: 3, spaceBetween: 30, }
-        },
+        576: { slidesPerView: 1, spaceBetween: 1 },
+        768: { slidesPerView: 1.6, spaceBetween: 10 },
+        1032: { slidesPerView: 2, spaceBetween: 10, },
+        1200: { slidesPerView: 3, spaceBetween: 10, }
+    },
     // effect: "fade",
     loop: true,
     pagination: {

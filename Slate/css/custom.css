@@ -176,8 +176,8 @@ h6 {
     font-size: var(--slate-font-sm);
     padding: 0px 10px;
     position: absolute;
-    left: 0;
-    top: 30px;
+    left: 17px;
+    top: 42px;
     z-index: 2;
 }
 
@@ -214,8 +214,8 @@ h6 {
 
 .hero-left-side {
     position: absolute;
-    top: 30%;
-    left: 20px;
+    top: 25%;
+    left: 40px;
     z-index: 1;
     color: var(--slate-light-color);
 }
@@ -315,7 +315,7 @@ h6 {
 }
 
 .third-dibba img {
-    width: 270px;
+    width: 100%;
 }
 
 .third-dibbas {
@@ -722,6 +722,10 @@ h6 {
     }
 
     /* fourth section */
+    .fourth-dibba {
+        height: 550px;
+    }
+
     .fourth-dibba img {
         width: 100%;
     }
