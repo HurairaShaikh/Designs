@@ -27,11 +27,24 @@ var swiperMobCards1 = new Swiper('.mySwiperCards1', {
 });
 var swiperMobCards2 = new Swiper('.mySwiperCards2', {
     // spaceBetween:10,
-    slidesPerView:1.1,
+    slidesPerView:1.2,
     loop: true,
 
 });
 
 // Third Section Slider
+var mySwiperThirdSec = new Swiper('.mySwiperThirdSec', {
+    spaceBetween:20,
+    slidesPerView:2,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
 
+// 
+let changeMobColor = document.getElementsByClassName("web-banners");
+let changeWebColor = document.getElementsByClassName("mob-banners-sli");
 
