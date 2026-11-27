@@ -8,6 +8,12 @@ var swiper = new Swiper('.mySwiper', {
     //         1400: {direction:"vertical",  slidesPerView: 1, }
     //     },
     loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    effect:"fade",
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -16,7 +22,13 @@ var swiper = new Swiper('.mySwiper', {
 
 });
 var swiperMob = new Swiper('.mySwiperMob', {
-    // direction: 'vertical',
+    loop: true,
+    effect:"fade",
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -27,8 +39,9 @@ var swiperMob = new Swiper('.mySwiperMob', {
 });
 // Second Section slider
 var swiperMobCards2 = new Swiper('.mySwiperCards2', {
+    // effect:"cards",
     breakpoints: {
-        576: { slidesPerView: 1.3, spaceBetween: 10 },
+        576: { slidesPerView: 1,  },
         768: { slidesPerView: 1.6, spaceBetween: 10 },
         1032: { slidesPerView: 2, spaceBetween: 10 },
         1200: { slidesPerView: 3, spaceBetween: 24 }
