@@ -79,7 +79,23 @@ var mySwiperFourthSec = new Swiper('.mySwiperFourthSec', {
         dynamicBullets: true,
     },
 });
-// 
+// fifth section
+var mySwiperFifthSec = new Swiper('.mySwiperFifthSec', {
+    breakpoints: {
+        576: { slidesPerView: 1, spaceBetween: 10 },
+        768: { slidesPerView: 1.6, spaceBetween: 10 },
+        1032: { slidesPerView: 2, spaceBetween: 10, },
+        1200: { slidesPerView: 3, spaceBetween: 10, }
+    },
+    // effect: "fade",
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
+
 let changeMobColor = document.getElementsByClassName("web-banners");
 let changeWebColor = document.getElementsByClassName("mob-banners-sli");
 
