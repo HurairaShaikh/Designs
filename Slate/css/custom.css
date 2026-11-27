@@ -400,6 +400,49 @@ h6 {
     flex-direction: column;
 }
 
+/* sixth section */
+.sixth-section {
+    margin-top: 100px;
+}
+
+.sixth-above-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.six-down-sec .six-right p {
+    font-size: var(--slate-font-sm);
+}
+
+.six-right .first-para {
+    margin-top: -60px;
+}
+
+.watermark h3 {
+    font-size: 22rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin: 0;
+    user-select: none;
+    text-transform: uppercase;
+    width: 100%;
+    color: transparent;
+    background: linear-gradient(180deg, var(--slate-watermark-color) 10%,
+            var(--slate-body-color) 100%);
+    background-clip: text;
+}
+
+.six-main {
+    position: absolute;
+    transform: translate(38%, -83%);
+}
+
+@media screen and (min-width:1200px) {
+    
+}
+
 @media screen and (max-width:1199px) {
 
     html,
@@ -481,6 +524,38 @@ h6 {
     .fourth-dibbas .swiper-pagination-bullet-active {
         width: 24px;
         background-color: var(--slate-gray-shade6);
+    }
+     /* sixth section */
+      .sixth-section {
+        margin-top: 50px;
+    }
+
+    .six-down-sec .six-right p {
+        font-size: var(--slate-font-xsm);
+    }
+
+    sixth-above-sec {
+        flex-direction: column;
+    }
+
+    .watermark {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .six-main {
+        width: 545px;
+        transform: translate(40%, -84%);
+    }
+
+    .watermark h3 {
+        font-size: 15rem;
+    }
+
+    .six-right .first-para {
+        margin-top: 0px;
     }
 }
 
@@ -580,6 +655,38 @@ h6 {
     .fifth-dibba {
         /* transform: translateY(20%); */
     }
+    /* sixth section */
+      .sixth-section {
+        margin-top: 50px;
+    }
+
+    .six-down-sec .six-right p {
+        font-size: var(--slate-font-xsm);
+    }
+
+    sixth-above-sec {
+        flex-direction: column;
+    }
+
+    .watermark {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .six-main {
+        width: 545px;
+        transform: translate(40%, -84%);
+    }
+
+    .watermark h3 {
+        font-size: 15rem;
+    }
+
+    .six-right .first-para {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width:961px) {
@@ -672,7 +779,7 @@ h6 {
     }
 
     /* fifth section */
-     .fifth-section {
+    .fifth-section {
         background-size: cover;
         background-position: right;
         width: 100%;
@@ -686,6 +793,43 @@ h6 {
     .fifth-dibba {
         /* transform: translateY(20%); */
     }
+    /* sixth section */
+    .sixth-section {
+        margin-top: 50px;
+    }
+
+    .six-down-sec .six-right p {
+        font-size: var(--slate-font-xsm);
+    }
+
+    sixth-above-sec {
+        flex-direction: column;
+    }
+
+    .watermark {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .six-main {
+        width: 470px;
+        transform: translate(28%, -89%);
+    }
+
+    .watermark h3 {
+        font-size: 11rem;
+    }
+
+    .six-right .first-para {
+        margin-top: 0px;
+    }
+
+    /* .on-mob-down1 {
+        position: absolute;
+        bottom: -20px;
+    } */
 }
 
 @media screen and (max-width:767px) {
@@ -885,6 +1029,45 @@ h6 {
     .fifth-dibba {
         margin-top: 20px;
     }
+
+    /* sixth section */
+    .sixth-section {
+        margin-top: 50px;
+    }
+
+    .six-down-sec .six-right p {
+        font-size: var(--slate-font-xsm);
+    }
+
+    sixth-above-sec {
+        flex-direction: column;
+    }
+
+    .watermark {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .six-main {
+        width: 330px;
+        transform: translate(15%, -100%);
+    }
+
+    .watermark h3 {
+        font-size: 6rem;
+    }
+
+    .six-right .first-para {
+        margin-top: 0px;
+    }
+
+    .on-mob-down1 {
+        position: absolute;
+        bottom: -20px;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -940,5 +1123,10 @@ h6 {
 
     .fourth-dibba img {
         width: 100%;
+    }
+
+    /* sixth section */
+    .watermark h3 {
+        font-size: 5rem;
     }
 }
